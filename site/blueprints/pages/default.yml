@@ -9,9 +9,39 @@ columns:
       fields:
         type: fields
         fields:
-          text:
-            type: textarea
-            size: huge
+          headlineType:
+            type: toggles
+            label:
+              de: Titel-Überschrift-Typ
+              en: Title-Headline kind
+            default: text
+            options:
+              - value: text
+                text: Text
+                icon: h1
+              - value: image
+                text:
+                  de: Bild
+                  en: Image
+                icon: image
+          headlineImage:
+            label:
+              de: Titel-Überschrift-Bild
+              en: Title-Headline-Image
+            type: files
+            max: 2
+            layout: cards
+            uploads: image
+            when:
+              headlineType: image
+          layout:
+            type: layout
+            layouts:
+              - "1/1"
+              - "1/2, 1/2"
+            label:
+              de: Inhalt
+              en: Content
   sidebar:
     width: 1/3
     sections:
