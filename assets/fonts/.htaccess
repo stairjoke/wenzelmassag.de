@@ -1,0 +1,8 @@
+# Access denied to thieves and freeloaders!
+
+<IfModule mod_rewrite.c>
+		RewriteEngine On
+		RewriteCond %{HTTP_REFERER} !^https?://(www\.|dev\.)?wenzelmassag\.de [NC]
+		RewriteCond %{HTTP_REFERER} !^$
+		RewriteRule \.(woff2?|ttf|eot|otf|svg)$ - [NC,F,L]
+</IfModule>
