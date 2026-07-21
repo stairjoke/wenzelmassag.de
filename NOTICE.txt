@@ -1,6 +1,0 @@
-To remove unnecessary baggage, this repository was cleaned up using `git filter-repo` to remove:
-
-- data/content
-- public/assets/css
-
-from history.
