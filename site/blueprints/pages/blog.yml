@@ -35,9 +35,9 @@ tabs:
       info:
         text:
           de: |
-            Seiten vom Typ „Blog“ veröffentlichen einen Feed in RSS, Atom und JSON. Enthalten sind alle Artikel und deren Inhalte.
+            Seiten vom Typ „Blog“ veröffentlichen einen RSS-Feed. Enthalten sind alle Artikel und deren Inhalte.
           en: |
-            Pages of the ‘Blog’ type publish a feed in RSS, Atom and JSON. It includes all articles and their content.
+            Pages of the ‘Blog’ type publish an RSS feed. It includes all articles and their content.
       fields:
         fields:
           feedTitle:
