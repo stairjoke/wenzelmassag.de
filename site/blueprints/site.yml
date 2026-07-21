@@ -5,8 +5,8 @@ tabs:
 # Seiten Tab
   general:
     label:
-      de: Seiten
-      en: Pages
+      de: Allgemein
+      en: General
     icon: page
     sections:
       pages:
@@ -14,6 +14,18 @@ tabs:
       fields:
         fields:
           externalLinksList: fields/externalLinksList
+          copyrightString:
+            label:
+              # Urheberrechtsinformationen contains SHY breaks!
+              de: Urheber­rechts­infor­mationen
+              en: Copyright information
+            type: text
+            placeholder: Copyright © YYYY, Name.
+            help:
+              de: |
+                Der hier hinterlegte Text wird als Urheberrechtshinweis auf der Seite und in Feeds genutzt.
+              en: |
+                The text provided here is used as a copyright notice on the website and in feeds.
 
 # Interactions Tab
   interactions:
