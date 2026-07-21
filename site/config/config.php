@@ -9,6 +9,11 @@ return [
 	'cache' => [
 		'pages' => true
 	],
+	'hooks' => [
+		'route:before' => function ($route, $path, $method) {
+			header('Cache-Control: public, max-age=31365000');
+		}
+	],
 	'email' => [
 		'transport' => [
 			'type' => 'smtp',
