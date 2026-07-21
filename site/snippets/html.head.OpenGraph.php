@@ -49,6 +49,11 @@
 
 	endif; //is article
 
+	//HTML meta: tags
+	if($page->tags()->isNotEmpty()): ?>
+		<meta name="tags" content="<?= $tags ?>">
+	<?php endif; //
+
 
 	//OG Product > Plural title
 	if($page->pluralTitle()->isNotEmpty()): ?>
