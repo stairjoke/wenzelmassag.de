@@ -3,7 +3,8 @@
   "ignoredFilePatterns" : [
     "data\/runtime",
     "dev",
-    "public\/media"
+    "public\/media",
+    "public\/assets\/css\/scss"
   ],
   "localPath" : ".",
   "remotePath" : "\/kirby",
