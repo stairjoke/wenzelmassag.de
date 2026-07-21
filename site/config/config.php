@@ -5,7 +5,7 @@ return [
 			'compiler' => false
 		]
 	],
-	'languages' => true,
+	'languages' => true, //This enables neat features also useful whenbuilding a website with only one language. Additionally, switching an existing website to multi-language once it has content is cumbersome. Its easier to enable multi-language support and only configure one language.
 	'cache' => [
 		'pages' => true
 	],
@@ -13,17 +13,6 @@ return [
 		'route:before' => function ($route, $path, $method) {
 			header('Cache-Control: public, max-age=31365000');
 		}
-	],
-	'email' => [
-		'transport' => [
-			'type' => 'smtp',
-			'host' => 'smtp.strato.de',
-			'port' => 465,
-			'security' => true,
-			'auth' => true,
-			'username' => 'formular@entspannt.digital',
-			'password' => 'j6o2wyXEMD9v6XZjX-MrMhrzVLQoP9v6vKp-!y6RcaKD7@VpmX'
-		]
 	],
 	'thumbs' => [
 		'srcsets' => [
@@ -91,15 +80,20 @@ return [
 				'type' => 'group',
 				'open' => true,
 				'fieldsets' => [
-					'responsive-card', 'form', 'line', 'code'
+					'line', 'code'
 				]
 			]
 		]
-	],
-	'jr' => [
-		'static_site_generator' => [
-			'base_url' => '/_testing-stuff/static/'
+	]/*'email' => [
+		'transport' => [
+			'type' => 'smtp',
+			'host' => '',
+			'port' => 465,
+			'security' => true,
+			'auth' => true,
+			'username' => '',
+			'password' => ''
 		]
-	]
+	],*/
 ];
 ?>
