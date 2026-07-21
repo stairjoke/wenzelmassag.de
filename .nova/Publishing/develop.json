@@ -1,0 +1,14 @@
+{
+  "identifier" : "2F73F19F-E7DE-4AD6-AE7E-291402E246FB",
+  "ignoredFilePatterns" : [
+    ".gitignore",
+    ".editorconfig",
+    "LICENSE",
+    "README.md"
+  ],
+  "localPath" : ".",
+  "remotePath" : "\/sites\/wenzelmassag.de\/dev",
+  "remoteURL" : "https:\/\/wenzelmassag.de\/dev\/",
+  "server" : "WenzelMassag.de",
+  "usesPublishing" : true
+}

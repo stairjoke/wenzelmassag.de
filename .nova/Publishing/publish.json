@@ -1,7 +1,10 @@
 {
   "identifier" : "75A50F66-C8F4-47AD-A74E-7298C2829CE7",
   "ignoredFilePatterns" : [
-    ".gitignore"
+    ".gitignore",
+    ".editorconfig",
+    "LICENSE",
+    "README.md"
   ],
   "localPath" : ".",
   "remotePath" : "\/sites\/wenzelmassag.de",
