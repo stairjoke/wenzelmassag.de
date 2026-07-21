@@ -4,79 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47c984ba19859f702df4f2f06a901828",
+    "content-hash": "afd2ba418f156a4835f3de180230ad96",
     "packages": [
-        {
-            "name": "bnomei/kirby3-feed",
-            "version": "5.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bnomei/kirby3-feed.git",
-                "reference": "cba304753706ff7d46291e2230c733830097079e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bnomei/kirby3-feed/zipball/cba304753706ff7d46291e2230c733830097079e",
-                "reference": "cba304753706ff7d46291e2230c733830097079e",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.2",
-                "php": ">=8.2"
-            },
-            "require-dev": {
-                "getkirby/cms": "^5.0.0-alpha.4",
-                "larastan/larastan": "^v3.0.0",
-                "laravel/pint": "^1.13",
-                "pestphp/pest": "^v3.5.1",
-                "spatie/ray": "^1.39"
-            },
-            "suggest": {
-                "bnomei/kirby3-htmlhead": "Best-practice HTML Head Element extendable with snippets.",
-                "bnomei/kirby3-robots-txt": "Automatic virtual robots.txt with auto-detection of XML-Sitemaps from plugins.",
-                "bnomei/kirby3-security-headers": "CSP headers to make the the web a saver place. Sensible defaults with zero configuration."
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "kirby-cms-path": "tests/kirby"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Bnomei\\": "classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bruno Meilick",
-                    "email": "b@bnomei.com"
-                }
-            ],
-            "description": "Generate a Atom/JSON/RSS-Feed and XML-Sitemap from Pages-Collections",
-            "homepage": "https://github.com/bnomei/kirby3-feed",
-            "keywords": [
-                "Sitemap",
-                "atom",
-                "atom-feed",
-                "feed",
-                "json",
-                "json-feed",
-                "kirby",
-                "kirby-cms",
-                "kirby-plugin",
-                "rss",
-                "rss-feed",
-                "sitemap-xml"
-            ],
-            "support": {
-                "issues": "https://github.com/bnomei/kirby3-feed/issues",
-                "source": "https://github.com/bnomei/kirby3-feed/tree/v5.1.1"
-            },
-            "time": "2025-11-17T11:39:27+00:00"
-        },
         {
             "name": "christian-riesen/base32",
             "version": "1.6.0",
