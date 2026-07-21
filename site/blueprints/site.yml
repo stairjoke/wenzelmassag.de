@@ -7,6 +7,7 @@ tabs:
     label:
       de: Seiten
       en: Pages
+    icon: page
     sections:
       pages:
         type: pages
@@ -20,3 +21,18 @@ tabs:
 
 # Browser-Styling Tab
   iconAndTheme: tabs/iconAndTheme
+
+# Catch-All Files
+  catchAllFiles:
+    label:
+      de: Dateien
+      en: Files
+    icon: file
+    sections:
+      catchAllfiles:
+        type: files
+        help:
+          de: |
+            Hier werden alle Dateien angezeigt, die keiner spezifischen Seite zugeordnet sind. Diese Dateien werden wahrscheinlich für Open graph, Favikonen und ähliches genutzt.
+          en: |
+            This section displays all files that are not assigned to a specific page. These files are probably used for Open Graph, favicons and the like.
