@@ -1,5 +1,3 @@
-+ blueprint: page
-
 title: Text
 options:
   changeTemplate:
