@@ -41,6 +41,8 @@ return [
 		'form-block.success' => "Ihre Nachricht ist unterwegs, vielen Dank!",
 		'image' => 'Bild',
 		'message' => 'Nachricht',
+		'menu-toggle.label' => 'Menü',
+		'menu-toggle.aria' => 'Navigation ein und ausblenden',
 		'name' => 'Name',
 		'no-preference' => 'Keine Präferenz',
 		'phone' => 'Telefon'
