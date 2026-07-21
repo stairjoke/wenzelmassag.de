@@ -11,7 +11,14 @@ return [
 	'translations' => [
 		'feed' => 'Feed',
 		'footnotes' => 'Fußnoten',
-		'image' => 'Bild'
+		'image' => 'Bild',
+		'name' => 'Name',
+		'email' => 'E-Mail',
+		'phone' => 'Telefon',
+		'preferrReplyVia' => 'Präferenz • Rückruf oder E-Mail?',
+		'message' => 'Nachricht',
+		'fileAttachment' => 'Dateianhang',
+		'spamProtection' => 'SPAM-Schutz'
 	],
 	'url' => '/'
 ];
