@@ -2,7 +2,7 @@
   "php.interpreter" : "\/opt\/homebrew\/bin\/php",
   "php.validate" : "onChange",
   "workspace.color" : 12,
-  "workspace.name" : "kirby-custom-kit",
+  "workspace.name" : "custom-kirby-kit",
   "workspace.preview_root" : "public",
   "workspace.preview_type" : "custom",
   "workspace.preview_url" : "http:\/\/localhost:8000"
