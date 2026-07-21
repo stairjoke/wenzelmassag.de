@@ -7,4 +7,4 @@ options:
   changeTemplate: false
 accept:
   mime:
-    - image/x-icon
+    - image/vnd.microsoft.icon
