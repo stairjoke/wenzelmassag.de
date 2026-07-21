@@ -1,3 +1,7 @@
-"yaml.schemas": {
-  "/dev/kirby4-blueprints.schema.json": "site/blueprints/**/*.yml"
+{
+  "php.interpreter" : "\/opt\/homebrew\/bin\/php",
+  "php.validate" : "onChange",
+  "workspace.preview_root" : "public",
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/localhost:8000"
 }
