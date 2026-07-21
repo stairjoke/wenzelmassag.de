@@ -18,13 +18,13 @@
 		if($name) : ?>
 	<div class="input name">
 		<label for="name"><?= t('name', 'Name') ?>*</label>
-		<input id="name" name="formBlockName" type="text" placeholder="<?= t('form-block.name-placeholder', 'How may I call you?') ?>" required />
+		<input id="name" name="formBlockName" type="text" placeholder="<?= t('form-block.name-placeholder', 'How may I call you?') ?>" required autocomplete="name" />
 	</div>
 	<?php endif;
 	if($email): ?>
 	<div class="input email">
 		<label for="email"><?= t('email', 'Email') ?>*</label>
-		<input id="email" name="formBlockEmail" type="email" placeholder="<?= t('form-block.email-placeholder', "So I can reply to you.") ?>" required />
+		<input id="email" name="formBlockEmail" type="email" placeholder="<?= t('form-block.email-placeholder', "So I can reply to you.") ?>" required autocomplete="work email" />
 	</div>
 	<?php endif; ?>
 	<div class="input website">
@@ -34,11 +34,11 @@
 	<?php if($fon): ?>
 	<div class="input fon">
 		<label for="fon"><?= t('phone', 'Phone') ?>*</label>
-		<input id="fon" name="formBlockFon" type="tel" placeholder="<?= t('form-block.fon-placeholder', "Old fashioned? Maybe.") ?>" required />
+		<input id="fon" name="formBlockFon" type="tel" placeholder="<?= t('form-block.fon-placeholder', "Old fashioned? Maybe.") ?>" required autocomplete="work tel" />
 	</div>
 	<?php endif;
 	if($replyVia): ?>
-	<fieldset class="input replyVia switch">
+	<fieldset class="input replyVia switch" autocomplete="off">
 		<legend><?= t('form-block.prefer-reply-via', "Preference • Callback or email?") ?></legend>
 		<div>
 			<label><input name="formBlockReplyVia" type="radio" value="none" checked="" /><?= t('no-preference', 'no preference') ?></label>
@@ -62,14 +62,14 @@
 	if($captcha): ?>
 	<div class="input captcha">
 		<label for="captcha"><?= t('form-block.spam-protection', 'SPAM protection') ?></label>
-		<input id="captcha" name="formBlockCaptcha" type="number" placeholder="<?= I18n::template('form-block.spam-placeholder', "Please add " . $one . " and " . $two, ['one' => $one, 'two' => $two]) ?>" required />
+		<input id="captcha" name="formBlockCaptcha" type="number" placeholder="<?= I18n::template('form-block.spam-placeholder', "Please add " . $one . " and " . $two, ['one' => $one, 'two' => $two]) ?>" required autocomplete="off" />
 	</div>
 	<?php endif ?>
 
 	<input name="formBlockKey" type="hidden" value="<?= e($captcha, "1" . hash('md5', $one + $two), "0" . hash('md5', $one + $two)) ?>" />
 
 	<div class="input privacy big">
-		<label><input type="checkbox" value="formBlockPrivacy" required /> <?= $block->privacyNotice()->kt() ?></label>
+		<label><input type="checkbox" value="formBlockPrivacy" required autocomplete="off" /> <?= $block->privacyNotice()->kt() ?></label>
 	</div>
 	<input type="submit" name="formBlockSubmit" value="<?= t('form-block.submit', 'send') ?>" />
 
