@@ -72,7 +72,7 @@ return [
 				'type' => 'group',
 				'open' => true,
 				'fieldsets' => [
-					'responsive-card', 'line', 'code'
+					'responsive-card', 'form', 'line', 'code'
 				]
 			]
 		]

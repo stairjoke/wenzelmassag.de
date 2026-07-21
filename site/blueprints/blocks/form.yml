@@ -1,0 +1,38 @@
+name:
+  de: Kontaktformular
+  en: Contact form
+icon: chat
+preview: fields
+tabs:
+  form:
+    label:
+      de: Formular-Konfiguration
+      en: Form config
+    icon: chat
+    fields:
+      form-fields:
+        type: multiselect
+        label:
+          de: Formuarfelder
+          en: Form fields
+        layout: list
+        options:
+          name: Name
+          email:
+            de: E-Mail
+            en: eMail
+          fon:
+            de: Telefon
+            en: Phone
+          reply-via:
+            de: Antwort-Präferenz
+            en: Preferred reply method
+          message:
+            de: Nachricht
+            en: Message
+          files:
+            de: Dateianhang
+            en: File attachments
+          captcha:
+            de: SPAM-Schutz
+            en: SPAM-protection
