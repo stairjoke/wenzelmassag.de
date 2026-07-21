@@ -1,0 +1,7 @@
+label: Fediverse Account
+help:
+  de: |
+    Nutze das Format: "@benutzername@server-url"
+  en: |
+    Use this formatting: "@user-name@server-url"
+type: text
