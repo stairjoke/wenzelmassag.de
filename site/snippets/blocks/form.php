@@ -11,7 +11,7 @@
 	}
 ?>
 
-<form>
+<form class="form-block">
 	<?php if($name) : ?>
 	<div class="input">
 		<label for="name"><?= t('name', 'Name') ?></label>
