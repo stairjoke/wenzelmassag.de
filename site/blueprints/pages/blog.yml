@@ -32,6 +32,12 @@ tabs:
       en: Settings
     icon: settings
     sections:
+      info:
+        text:
+          de: |
+            Seiten vom Typ „Blog“ veröffentlichen einen Feed in RSS, Atom und JSON. Enthalten sind alle Artikel und deren Inhalte.
+          en: |
+            Pages of the ‘Blog’ type publish a feed in RSS, Atom and JSON. It includes all articles and their content.
       fields:
         fields:
           feedTitle:
@@ -43,9 +49,13 @@ tabs:
           categories:
             extends: fields/categorySetup
             width: 1/2
-      info:
-        text:
-          de: |
-            Seiten vom Typ „Blog“ veröffentlichen einen Feed in RSS, Atom und JSON. Enthalten sind alle Artikel und deren Inhalte.
-          en: |
-            Pages of the ‘Blog’ type publish a feed in RSS, Atom and JSON. It includes all articles and their content.
+          feedDescription:
+            type: text
+            default: "{{ site.title }}: Subscribe to all blog-posts. {{ site.description }}"
+            placeholder: "{{ site.title }}: Subscribe to all blog-posts. {{ site.description }}"
+            counter: true
+            help:
+              de: |
+                Die Beschreibung sollte unter 200 zeichen lang sein und auf einen Blick erklären, welche Inhalte im Feed zu erwarten sind.
+              en: |
+                The description should be less than 200 characters long and explain at a glance what kind of content can be expected in the feed.
