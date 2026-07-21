@@ -17,7 +17,7 @@
 							foreach($headlineImage as $image) : ?>
 								<source srcset="<?= $image->url() ?>" media="(prefers-color-scheme: <?= $image->colorscheme() ?>)" />
 							<?php endforeach; ?>
-								<img srcset="<?= $headlineImage->first()->url() ?>" alt="<?= $headlineImage->first()->alt() ?>" />
+								<img class="noShadow" srcset="<?= $headlineImage->first()->url() ?>" alt="<?= $headlineImage->first()->alt() ?>" fetchpriority="high" />
 							</picture>
 						</h1>
 					</div>

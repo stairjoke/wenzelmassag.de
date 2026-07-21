@@ -7,7 +7,7 @@
 $sizes = "(max-width: 38rem) calc(100vw - 2rem),
  calc(33rem)";
 	?>
-	<picture style="--dominant-color: <?= $image->color() ?>">
+	<picture <?= e($image->color()->isNotEmpty(), 'style="--dominant-color:'.$image->color().'"'); ?>>
 		<source srcset="<?= $image->srcset('column-avif') ?>" sizes="<?= $sizes ?>" type="image/avif" />
 		<source srcset="<?= $image->srcset('scolumn-webp') ?>" sizes="<?= $sizes ?>" type="image/webp" />
 		<img alt="<?= $image->alt() ?>" src="<?= $image->resize(264)->url()?>" srcset="<?= $image->srcset('column') ?>" sizes="<?= $sizes ?>" width="264" height="264"/>
