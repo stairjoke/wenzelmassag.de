@@ -10,6 +10,9 @@ return [
 	],
 	'name' => 'Deutsch',
 	'translations' => [
-		'example' => 'Beispiel'
+		'---E---' => 'alphabetical order marker',
+			'example' => 'Beispiel',
+		'---F---' => 'alphabetical order marker',
+			'footnotes' => 'Fußnoten'
 	]
 ];
