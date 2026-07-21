@@ -4,4 +4,9 @@ label:
   en: Kategorie
 options:
   type: query
-  query: site.OGCategories?.split(",") ?? ""
+  query: page.parent?.categories?.split(",") ?? ""
+help:
+  de: |
+    Kategorien können in den Blog-Einstellungen bearbeitet werden.
+  en: |
+    Categories can be edited in the blog settings.

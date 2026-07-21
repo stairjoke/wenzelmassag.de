@@ -6,16 +6,35 @@ options:
     - blog
     - text
 
-sections:
-  pages:
-    type: pages
-    layout: table
-    columns:
-      pubDate:
-        label: pubDate
-        value: "{{ page.pubDate.toDate('Y-m-d') }}"
-        type: text
-      tags: true
-    search: true
-    sortBy: status asc date desc
-    template: article
+tabs:
+  posts:
+    label:
+      de: Artikel
+      en: Articles
+    sections:
+      pages:
+        type: pages
+        layout: table
+        columns:
+          pubDate:
+            label: pubDate
+            value: "{{ page.pubDate.toDate('Y-m-d') }}"
+            type: text
+          tags: true
+        search: true
+        sortBy: status asc date desc
+        template: article
+  settings:
+    label:
+      de: Einstellungen
+      en: Settings
+    sections:
+      fields:
+        fields:
+          categories: fields/categorySetup
+      info:
+        text:
+          de: |
+            Seiten vom Typ „Blog“ veröffentlichen einen Feed in RSS, Atom und JSON. Enthalten sind alle Artikel und deren Inhalte.
+          en: |
+            Pages of the ‘Blog’ type publish a feed in RSS, Atom and JSON. It includes all articles and their content.
