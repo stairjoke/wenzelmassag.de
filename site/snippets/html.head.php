@@ -1,4 +1,4 @@
-<title><?= $site->title() ?> &gt; <?= $page->title() ?></title>
+<title><?= $page->title() ?> (<?= $site->title() ?>)</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php if($site->favicoDefault()->isNotEmpty()): ?>
