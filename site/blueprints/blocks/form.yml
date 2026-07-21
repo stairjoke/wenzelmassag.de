@@ -33,9 +33,6 @@ tabs:
           de: Optionale Formuarfelder
           en: Optional form fields
         options:
-          files:
-            de: Dateianhang
-            en: File attachments
           captcha:
             de: SPAM-Schutz
             en: SPAM-protection

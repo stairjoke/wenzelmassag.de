@@ -6,6 +6,17 @@ return [
 		]
 	],
 	'languages' => true,
+	'email' => [
+		'transport' => [
+			'type' => 'smtp',
+			'host' => 'smtp.strato.de',
+			'port' => 465,
+			'security' => true,
+			'auth' => true,
+			'username' => 'formular@entspannt.digital',
+			'password' => 'j6o2wyXEMD9v6XZjX-MrMhrzVLQoP9v6vKp-!y6RcaKD7@VpmX'
+		]
+	],
 	'thumbs' => [
 		'srcsets' => [
 			'column' => [
