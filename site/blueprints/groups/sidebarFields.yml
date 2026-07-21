@@ -5,5 +5,11 @@ fields:
   pubDate:
     extends: fields/date
     label:
+      de: Datum „veröffentlicht am“
+      en: “Published” date
+    required: true
+  editedDate:
+    extends: fields/date
+    label:
       de: Datum „zuletzt aktualisiert“
       en: “Last updated” date

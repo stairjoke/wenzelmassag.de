@@ -49,8 +49,14 @@ tabs:
           categories:
             extends: fields/categorySetup
             width: 1/2
+            label:
+              de: Artikel-Kategorien
+              en: Article categories
           feedDescription:
-            type: text
+            width: 1/2
+            type: textarea
+            buttons: false
+            size: small
             default: "{{ site.title }}: Subscribe to all blog-posts. {{ site.description }}"
             placeholder: "{{ site.title }}: Subscribe to all blog-posts. {{ site.description }}"
             counter: true
@@ -59,3 +65,14 @@ tabs:
                 Die Beschreibung sollte unter 200 zeichen lang sein und auf einen Blick erklären, welche Inhalte im Feed zu erwarten sind.
               en: |
                 The description should be less than 200 characters long and explain at a glance what kind of content can be expected in the feed.
+          feedCategory:
+            width: 1/2
+            label:
+              de: Kategorie des Blogs
+              en: Blog category
+            type: text
+            help:
+              de: |
+                Hier sollte die allgemeine Kategorie des ganzen Blogs eingetragen werden. Beispielsweise „Kochen“, „Mode“, „Kino & TV“, oder „Hobbys“.
+              en: |
+                This is where you should enter the general category for the whole blog. For example, ‘Cooking’, ‘Fashion’, ‘Film & TV’, or ‘Hobbies’.

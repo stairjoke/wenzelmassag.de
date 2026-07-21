@@ -23,8 +23,6 @@ columns:
         type: fields
         extends: groups/sidebarFields
         fields:
-          pubDate:
-            label: pubDate
           category:
             extends: fields/articleCategory
           tags:
