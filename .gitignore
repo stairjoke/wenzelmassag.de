@@ -15,6 +15,7 @@ Icon
 # -------------
 
 /data/storage/content
+/public/downloads/*
 
 # Lock files
 # ---------------
