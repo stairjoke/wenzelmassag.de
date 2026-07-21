@@ -1,13 +1,25 @@
-<head>
-	<title><?= $page->title() ?></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?= css([
-		'assets/css/styles.css',
-		'@auto'
-	]); ?>
-	<?php
-		snippet("html.head.Feeds");
-		snippet("html.head.OpenGraph");
-	?>
-</head>
+<title><?= $site->title() ?> &gt; <?= $page->title() ?></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php if($site->favicoDefault()->isNotEmpty()): ?>
+<!-- User defined Favicon overriding /favicon.ico -->
+<link rel="icon" type="image/vnd.microsoft.icon" href="<?= $site->favicoDefault()->toFile()->url() ?>">
+<?php endif; ?>
+
+<!-- Generic JS -->
+<!--<script src="/assets/js/script.js"></script>-->
+
+<!-- Template specific JS -->
+<!--<?= js('@auto') ?>-->
+
+<!-- Generic CSS -->
+<?= css(['assets/css/styles.css']); ?>
+
+<!-- Template specific CSS -->
+<?= css(['@auto']); ?>
+
+<!-- Feeds and OpenGraph -->
+<?php
+	snippet("head.Feeds");
+	snippet("head.OpenGraph");
+?>
