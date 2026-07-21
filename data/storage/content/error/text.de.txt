@@ -2,4 +2,20 @@ Title: Fehler
 
 ----
 
+Text: Die Seite konnte nicht geladen werden. Häufig entsteht dieser Fehler, weil die aufgerufene Adresse einen Schreibfehler beinhaltet. Falls Sie auf einen Link geklickt haben und hier angekommen sind, nutzen Sie bitte den „Zurück“-Button Ihres Browsers und melden Sie dem Seitenbetreiber diesen Fehler.
+
+----
+
+Author: 
+
+----
+
+Date: 
+
+----
+
+Teaser: 
+
+----
+
 Uuid: ajqunpty4am97xrn
