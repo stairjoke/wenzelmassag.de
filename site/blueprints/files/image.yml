@@ -30,7 +30,23 @@ fields:
           de: Dunkel
           en: dark
   color:
+    width: 1/2
     type: color
     label:
       de: Dominante Farbe
       en: Dominan color
+  shadow:
+    width: 1/2
+    type: toggle
+    default: true
+    translate: false
+    label:
+      de: Schlagschatten
+      en: Drop-Shadow
+    text:
+      -
+        de: kein Schatten
+        en: no shadow
+      -
+        de: Schatten
+        en: Shadow
