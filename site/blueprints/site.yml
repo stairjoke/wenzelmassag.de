@@ -15,8 +15,19 @@ tabs:
         fields:
           externalLinksList: fields/externalLinksList
 
-# Open Graph Tab
-  openGraph: tabs/OpenGraph
+# Interactions Tab
+  interactions:
+    label:
+      de: Interaktionen
+      en: Interactions
+    icon: share
+    sections:
+      openGraphFields:
+        type: fields
+        extends: groups/OpenGraph
+      syndicationFields:
+        type: fields
+        extends: groups/syndication
 
 # Browser-Styling Tab
   iconAndTheme: tabs/iconAndTheme

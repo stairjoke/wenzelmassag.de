@@ -1,0 +1,9 @@
+type: group
+fields:
+  feeds:
+    type: pages
+    help:
+      de: |
+        Trage Seiten ein, die einen Feed veröffentlichen. Der Feed wird daraufhin auf allen Seiten dieser Webseite registriert, sodass er für FeedReader leicht zu finden ist.
+      en: |
+        Add pages that publish a feed. The feed will then be registered on all pages of this website, making it easy for feed readers to discover.
