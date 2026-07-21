@@ -4,6 +4,19 @@
 # rewrite rules
 <IfModule mod_rewrite.c>
 
+# Redirects
+
+Redirect /rrps https://www.mtu-solutions.com/eu/en/about-us/digital-solutions.html
+Redirect /RRPS https://www.mtu-solutions.com/eu/en/about-us/digital-solutions.html
+Redirect /sonnen https://account.sonnen.de/users/sign_in
+Redirect /SONNEN https://account.sonnen.de/users/sign_in
+Redirect /sabine https://www.figma.com/proto/nJOK5DPNkZTZ5jn3FdNmHu/Sabine-Rabl---Webseite?page-id=0%3A1&node-id=1-4&p=f&viewport=205%2C45%2C0.35&t=CH8aAGYgrDXi0T4D-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A4
+Redirect /SABINE https://www.figma.com/proto/nJOK5DPNkZTZ5jn3FdNmHu/Sabine-Rabl---Webseite?page-id=0%3A1&node-id=1-4&p=f&viewport=205%2C45%2C0.35&t=CH8aAGYgrDXi0T4D-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A4
+Redirect /Sabine https://www.figma.com/proto/nJOK5DPNkZTZ5jn3FdNmHu/Sabine-Rabl---Webseite?page-id=0%3A1&node-id=1-4&p=f&viewport=205%2C45%2C0.35&t=CH8aAGYgrDXi0T4D-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A4
+Redirect /fehlschlag https://entspannt.digital/downloads/Portfolio-Webseite-Verworfen.fig.zip
+Redirect /FEHLSCHLAG https://entspannt.digital/downloads/Portfolio-Webseite-Verworfen.fig.zip
+Redirect /Fehlschlag https://entspannt.digital/downloads/Portfolio-Webseite-Verworfen.fig.zip
+
 # enable awesome urls. i.e.:
 # http://yourdomain.com/about-us/team
 RewriteEngine on
