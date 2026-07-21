@@ -15,7 +15,7 @@
 	<?php if($name) : ?>
 	<div class="input">
 		<label for="name"><?= t('name', 'Name') ?></label>
-		<input id="name" name="name" type="text" />
+		<input id="name" name="name" type="text" placeholder="<?= t('form-block.name-placeholder', 'How may I call you?') ?>" />
 	</div>
 	<?php endif;
 	if($email): ?>
@@ -32,7 +32,8 @@
 	<?php endif;
 	if($replyVia): ?>
 	<fieldset class="input">
-		<label><input name="replyVia" type="radio" value="none" /><?= t('noPreference', 'no preference') ?></label>
+		<legend><?= t('form-block.prefer-reply-via', "Preference • Callback or email?") ?></legend>
+		<label><input name="replyVia" type="radio" value="none" /><?= t('no-preference', 'no preference') ?></label>
 		<label><input name="replyVia" type="radio" value="phone" /><?= t('callback', 'call back') ?></label>
 		<label><input name="replyVia" type="radio" value="email" /><?= t('email', 'email') ?></label>
 	</fieldset>
@@ -45,17 +46,17 @@
 	<?php endif;
 	if($files): ?>
 	<div class="input big">
-		<label for="file"><?= t('fileAttachment', 'File attachment') ?></label>
+		<label for="file"><?= t('form-block.file-attachment', 'File attachment') ?></label>
 		<input id="file" name="file" type="file" />
 	</div>
 	<?php endif;
 	if($captcha): ?>
 	<div class="input">
-		<label for="captcha"><?= t('spamProtection', 'SPAM protection') ?></label>
+		<label for="captcha"><?= t('form-block.spam-protection', 'SPAM protection') ?></label>
 		<input id="captcha" name="captcha" type="text" />
 	</div>
 	<?php endif ?>
 
 	<input name="key" type="hidden" value="" />
-	<input type="submit" value="<?= t('submitForm', 'send') ?>" />
+	<input type="submit" value="<?= t('form-block.submit', 'send') ?>" />
 </form>
