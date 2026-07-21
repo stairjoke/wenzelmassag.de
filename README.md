@@ -1,17 +1,25 @@
-# About `custom-kirby-kit`
-Kirby is a lean and fast CMS, shipping with a well managed feature-set to ensure great performance. When building a new website, I usually need a set of plugins and additional features that is mostly same for all sites. To make my life easier, I’ve created this `custom-kirby-kit`, which includes these modifications already. It builds on the [Kirby CMS composer kit](https://github.com/getkirby/composerkit/).
+# What is `custom-kirby-kit`
+Kirby is a lean and fast CMS, shipping with a well managed feature-set to ensure great performance. When building a new website, I usually need a set of plugins and additional features that is mostly the same for all sites. To make my life easier, I’ve created this `custom-kirby-kit`, which includes these modifications already. It builds on the [Kirby CMS composer kit](https://github.com/getkirby/composerkit/).
 
-**ℹ️ Info:** This repository used to be my freelance-website "entspannt.digital". I converted it into this custom kit when I took entspannt.digital offline and recycled the code for my portfolio website wenzelmassag.de. You might find leftovers from this repository’s time as entspannt.digital, if you do, please file an issue or clean them up and send a pull request. Thank you!
+**ℹ️ Info:** This repository used to be my freelance-website "entspannt.digital". I converted it into this custom kit when I took entspannt.digital offline in order to reuse the code for my portfolio website wenzelmassag.de. I built this kit as the central point to implement features I wish every Kirby installation had, and all my Kirby websites fork it as their basis.
 
-## About commits
-This repository uses [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+You might find leftovers from this repository’s time as entspannt.digital. If you do, please file an issue or clean them up and send a pull request. Thank you!
 
-## Additional Features and Configurations
+## Quick facts
+- This repository uses [conventional commits.](https://www.conventionalcommits.org/en/v1.0.0/) If you plan to submit a pull request, please write your commit messages accordingly.
+- That’s it for now.
+
+## Documentation of additions and changes
+Everything this custom kit does differently from vanilla Kirby is documented below.
+
 ### Language Support
-Kirby supports multilingual websites, this kit enables this feature by default and configures one language: German.
+Kirby supports [multilingual websites,](https://getkirby.com/docs/guide/languages) but the feature is disabled by default. This kit enables this feature and configures one language: German. This adds complexity, but also some advantages:
+
+1. Kirby uses text-files to store data, not a database. These are named `template-name.txt` for pages and `file-name.ext.txt` for sidecar files, which may contain alt-text for images and more. With translations enabled, Kirby uses different names: `template-name.language.txt` and `file-name.ext.language.txt`. However, when turning on translations, it will _not_ rename existing content files, which means if you have a lot of content, its a lot of manual renaming to get the site working again. I have decided to enable translations from the start for all pages, including those only built in one language, to future-proof them.
+2. The translations feature comes with this nifty helper: `t()`. It uses [custom language variables](https://getkirby.com/docs/guide/languages/custom-language-variables), editable in the Panel. Instead of hard-coding strings into templates, and having to repeat yourself, `t()` allows using a customisable set of translated strings in your code. Example: `t('login', "log in")` looks for the key “login” in the translations file, which will result in “anmelden” in German, and fall-back to “log in”, if the key is not found in the translations for the visitor’s selected language.
 
 ### Improved Upload Handler
-By default, new files uploaded by users have no metadata. If configured in a blueprint, Kirby adds a template (file-blueprint). The Improved Upload Handler is a plugin which automatically assigns a blueprint to newly uploaded files, unless Kirby has already done so. It also saves who uploaded the file and when into the metadata file.
+By default, new files uploaded by users have no metadata, unless configured in the blueprint of the Panel page that is used to upload them. The Improved Upload Handler is a plugin. It automatically assigns a blueprint to newly uploaded files, unless it already has one assigned to it. It checks if the Kirby installation is set up with file-blueprints for audio, document, image, or video, and assigns the correct one. It will not assign file-blueprints unless they exist at the time of uploading the file. It also saves which user-account uploaded the file and when into the sidecar-file.
 
 #### Using Custom Language Variable
 See also [Custom Language Variables.](https://getkirby.com/docs/guide/languages/custom-language-variables)
