@@ -214,4 +214,4 @@ tabs:
                         en: The current document is part of a series. The link points to the previous document in the series.
                   href:
                     label: URL
-                    type: text
+                    type: link
