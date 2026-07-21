@@ -13,6 +13,8 @@ return [
 		'---E---' => 'alphabetical order marker',
 			'example' => 'Beispiel',
 		'---F---' => 'alphabetical order marker',
-			'footnotes' => 'Fußnoten'
+			'footnotes' => 'Fußnoten',
+		'---P---' => 'alphabetical order marker',
+			'pubDate' => 'Veröffentlichungsdatum'
 	]
 ];

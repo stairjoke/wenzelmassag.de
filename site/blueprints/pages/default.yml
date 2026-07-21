@@ -3,9 +3,10 @@ title:
   de: Layout
 options:
   changeTemplate:
-    - text
-    - article
     - default
+    - article
+    - blog
+    - text
 
 columns:
   main:

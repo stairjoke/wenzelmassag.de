@@ -3,9 +3,10 @@ title:
   en: Text - article, blog-post
 options:
   changeTemplate:
-    - text
-    - article
     - default
+    - article
+    - blog
+    - text
 
 columns:
   main:
@@ -26,9 +27,7 @@ columns:
         extends: groups/sidebarFields
         fields:
           pubDate:
-            label:
-              de: Veröffentlichungsdatum
-              en: date of publication
+            label: pubDate
           category:
             extends: fields/articleCategory
           tags:

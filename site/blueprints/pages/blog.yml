@@ -1,0 +1,21 @@
+title: Blog
+options:
+  changeTemplate:
+    - default
+    - article
+    - blog
+    - text
+
+sections:
+  pages:
+    type: pages
+    layout: table
+    columns:
+      pubDate:
+        label: pubDate
+        value: "{{ page.pubDate.toDate('Y-m-d') }}"
+        type: text
+      tags: true
+    search: true
+    sortBy: status asc date desc
+    template: article

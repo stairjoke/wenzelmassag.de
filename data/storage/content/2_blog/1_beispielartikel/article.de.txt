@@ -1,0 +1,41 @@
+Title: Beispielartikel
+
+----
+
+Pagetitle: 
+
+----
+
+Headlinetype: text
+
+----
+
+Headlineimage: 
+
+----
+
+Headlinemaxwidth: 100
+
+----
+
+Text: 
+
+----
+
+Author: - user://uuIfENhe
+
+----
+
+Pubdate: 2026-04-29 20:45:00
+
+----
+
+Category: 
+
+----
+
+Tags: example-tag
+
+----
+
+Uuid: c13i4hatuxkeuapj
