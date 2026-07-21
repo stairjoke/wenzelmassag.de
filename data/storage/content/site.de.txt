@@ -2,7 +2,39 @@ Title: Custom Kirby Kit
 
 ----
 
+Externallinkslist: 
+
+----
+
+Ogimage: 
+
+----
+
 Description: Example description.
+
+----
+
+Feeds: - page://rm0wrorpasjpb3b4
+
+----
+
+Favicondefault: 
+
+----
+
+Faviconsvg: 
+
+----
+
+Faviconmaskicon: 
+
+----
+
+Themecolor: 
+
+----
+
+Appicons: 
 
 ----
 

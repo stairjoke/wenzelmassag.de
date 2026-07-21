@@ -2,11 +2,11 @@ Title: Home
 
 ----
 
-Headlinetype: text
+Pagetitle: Kirby Custom Kit
 
 ----
 
-Pagetitle: Kirby Custom Kit
+Headlinetype: text
 
 ----
 
@@ -19,6 +19,18 @@ Headlinemaxwidth:
 ----
 
 Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"level":"h2","text":"What is <code>custom-kirby-kit</code>"},"id":"ecec7939-e5e8-47d0-980a-ceff0bb807a3","isHidden":false,"type":"heading"}],"id":"483ac512-a4b7-4442-a915-666cb7da2d55","width":"1/2"},{"blocks":[{"content":{"text":"<p><a href=\"https://getkirby.com/\">Kirby is a lean and fast CMS,</a> shipping with a well managed feature-set to ensure great performance. To publish a site with Kirby, you need to purchase a license; this repository is a personal side-project and not part of Kirby. When building a new website, I usually need a set of plugins and additional features that is mostly the same for all sites. To make my life easier, I’ve created this <code>custom-kirby-kit</code>, which includes the modifications I always apply in all my Kirby projects. It builds on the <a href=\"https://github.com/getkirby/composerkit/\">Kirby CMS composer kit.</a></p><p><strong>ℹ️ Info:</strong> This repository used to be my freelance-website \"entspannt.digital\". I converted it into this custom kit when I took entspannt.digital offline in order to reuse the code for my portfolio website wenzelmassag.de. I built this kit as the central point to implement features I wish every Kirby installation had, and all my Kirby websites fork it as their basis.</p><p>You might find leftovers from this repository’s time as entspannt.digital. If you do, please file an issue or clean them up and send a pull request. Thank you!</p>"},"id":"535fd568-232c-404f-b890-377a0fc35e8f","isHidden":false,"type":"text"}],"id":"d233e8f5-7d8f-4403-b506-4a5e011b67f3","width":"1/2"}],"id":"90382fcc-dd38-4040-b663-42b672cc24ce"}]
+
+----
+
+Author: 
+
+----
+
+Pubdate: 2026-05-08 17:05:00
+
+----
+
+Editeddate: 
 
 ----
 
