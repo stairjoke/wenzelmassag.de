@@ -3,10 +3,7 @@ title:
   en: Text - article, blog-post
 options:
   changeTemplate:
-    - default
     - article
-    - blog
-    - text
 
 columns:
   main:
