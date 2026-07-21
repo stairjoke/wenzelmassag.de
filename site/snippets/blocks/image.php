@@ -15,6 +15,7 @@ if ($block->location() == 'web') {
 		$src = $image->url();
 		$dominantColor = $image->color();
 		$shadow = $image->shadow()->toBool();
+		$caption = $caption->or($image->caption());
 }
 
 ?>
