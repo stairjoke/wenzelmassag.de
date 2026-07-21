@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= $kirby->language()->code() ?>">
 	<?php snippet('body.head'); ?>
 	<body>
 		Article
