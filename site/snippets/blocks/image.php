@@ -20,19 +20,21 @@ if ($block->location() == 'web') {
 
 ?>
 <?php if ($src): ?>
-<figure<?= Html::attr(['data-ratio' => $ratio, 'data-crop' => $crop], null, ' ') ?>>
-	<?php if ($link->isNotEmpty()): ?>
-	<a href="<?= Str::esc($link->toUrl()) ?>">
-		<img src="<?= $src ?>" alt="<?= $alt->esc() ?>" style="--dominant-color: <?= $dominantColor ?>" class="<?= e($shadow, null, 'noShadow') ?>">
-	</a>
-	<?php else: ?>
-	<img src="<?= $src ?>" alt="<?= $alt->esc() ?>" style="--dominant-color: <?= $dominantColor ?>" class="<?= e($shadow, null, 'noShadow') ?>">
-	<?php endif ?>
+	<div class="image-container">
+		<figure<?= Html::attr(['data-ratio' => $ratio, 'data-crop' => $crop], null, ' ') ?>>
+			<?php if ($link->isNotEmpty()): ?>
+			<a href="<?= Str::esc($link->toUrl()) ?>">
+				<img src="<?= $src ?>" alt="<?= $alt->esc() ?>" style="--dominant-color: <?= $dominantColor ?>" class="<?= e($shadow, null, 'noShadow') ?>">
+			</a>
+			<?php else: ?>
+			<img src="<?= $src ?>" alt="<?= $alt->esc() ?>" style="--dominant-color: <?= $dominantColor ?>" class="<?= e($shadow, null, 'noShadow') ?>">
+			<?php endif ?>
 
-	<?php if ($caption->isNotEmpty()): ?>
-	<figcaption inert>
-		<p><?= $caption ?></p>
-	</figcaption>
-	<?php endif ?>
-</figure>
+			<?php if ($caption->isNotEmpty()): ?>
+			<figcaption inert>
+				<p><?= $caption ?></p>
+			</figcaption>
+			<?php endif ?>
+		</figure>
+	</div>
 <?php endif ?>
