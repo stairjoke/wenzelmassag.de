@@ -12,7 +12,7 @@
 		}
 ?>
 
-<form class="form-block">
+<form class="form-block" action="<?= $page->url() ?>" method="POST">
 	<?php
 		$one = rand(1, 5);
 		$two = rand(2, 5); // Must be larger than 2 and may only be one digit long for SPAM detection
@@ -22,7 +22,7 @@
 	<?php if($name) : ?>
 	<div class="input name">
 		<label for="name"><?= t('name', 'Name') ?>*</label>
-		<input id="name" name="formBlockName" type="text" placeholder="<?= t('form-block.name-placeholder', 'How may I call you?') ?>" required autocomplete="name" />
+		<input id="name" name="formBlockName" type="text" placeholder="<?= t('form-block.name-placeholder', 'How may I call you?') ?>" required autocomplete="name" minlength="3" />
 	</div>
 	<?php endif;
 	if($email): ?>
