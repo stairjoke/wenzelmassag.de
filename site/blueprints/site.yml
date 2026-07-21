@@ -1,67 +1,24 @@
-+ blueprint: site
-
-title:
-  de: Seite
-  en: Site
+title: Dashboard
 
 tabs:
+
+# Seiten Tab
   general:
     label:
-      de: Allgemein
-      en: General
-    icon: dots
+      de: Seiten
+      en: Pages
     columns:
       column:
         width: 1/1
         sections:
-          fields:
-            fields:
-              logotype:
-                type: text
-                label: Logotype
           pages:
-            label:
-              de: Seiten
-              en: Pages
             type: pages
             layout: list
-  openGraph:
-    label:
-      de: Open Graph Einstellungen
-      en: Open Graph Settings
-    icon: open
-    columns:
-      column:
-        sections:
-          openGraphFields:
-            type: fields
-            fields:
-              description:
-                width: 1/2
-                label:
-                  de: Beschreibung
-                  en: Description
-                help:
-                  de: |
-                    Der Text wird der OpenGraph-Beschreibung genutzt, falls eine Seite keinen Teaser beinhaltet. Er wird beispielsweise von Google gezeigt und sollte nicht länger als 200 Zeichen sein.
-                  en: |
-                    This text will be used as OpenGraph description if a page does not contain a teaser text. Services such as Google display it inline as preview. It should not exceed 200 characters.
-                type: textarea
-                buttons: false
-                size: small
-                counter: true
-              ogImage:
-                width: 1/2
-                label:
-                  de: Standard Vorschaubild
-                  en: Default preview image
-                help:
-                  de: Dieses Bild wird in iMessage, Signal, BlueSky, Mastodon, etc. angezeigt, wenn die Seite geteilt wird. Einzelne Seiten können dieses Bild überschreiben um die UX zu verbessern.
-                  en: This image will be displayed by iMessage, Signal, BlueSky, Mastodon, etc. when a user shares this website. Some pages may override this default to impove UX.
-                type: files
-                uploads: image
-                layout: cards
-                max: 1
+
+# Open Graph Tab
+  openGraph: tabs/OpenGraph
+
+# Metadaten Tab
   metadata:
     label:
       de: Weitere Metadaten
