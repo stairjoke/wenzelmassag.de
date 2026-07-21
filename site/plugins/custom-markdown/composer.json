@@ -3,11 +3,11 @@
 	"type": "kirby-plugin",
 	"description": "This plugin replaces the default markdown parser and changes how footnotes render",
 	"version": "1",
-	"license": "Copyright (c) 2025 Wenzel Massag, some rights reserved, see LICENSE file.",
+	"license": "MIT License. Copyright (c) 2025 Wenzel Massag.",
 	"authors": [
 		{
 			"name": "Wenzel Massag",
-			"email": "wenzel@entspannt.digital"
+			"email": "mail@wenzelmassag.de"
 		}
 	],
 	"require": {
