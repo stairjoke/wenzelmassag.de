@@ -4,27 +4,38 @@
 		<title>Wenzel Massag</title>
 		<meta charset="UTF-8">
 
+		<!-- This site works on all screen sizes without needing to be scaled -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- AI disclosure: None of the content was AI generated. Learn more: https://github.com/dweekly/ai-content-disclosure -->
 		<meta name="ai-disclosure" content="none">
-		<!-- Learn more: https://github.com/dweekly/ai-content-disclosure -->
 
+		<!-- Load the fonts and preload the important files -->
 		<link rel="stylesheet" type="text/css" href="/assets/styles/fonts.css">
 		<link rel="preload" as="font" href="/assets/fonts/swiza-light-webfont.woff2" type="font/woff2" crossorigin="anonymous" />
 		<link rel="preload" as="font" href="/assets/fonts/swiza-regular-webfont.woff2" type="font/woff2" crossorigin="anonymous" />
 
+		<!-- Reset the vendor CSS and load my own -->
+		<link rel="stylesheet" type="text/css" href="/assets/styles/CSS-reset-CSSes/hard-reset.css">
+		<link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
 	</head>
 	<body>
 		<head>
-			<a href="#main">jump to main content</a>
-			<ul class="language-switcher" aria-label="pick a language">
-					<li><a href="?lang=en">🇬🇧 English</a></li>
-					<li><a href="?lang=de">🇩🇪 Deutsch</a></li>
+			<a href="#main" class="visually-hidden">jump to main content</a>
+			<ul id="language-switcher" aria-label="pick a language">
+					<li><a href="#" onclick="switchLanguage(event, 'en')">🇬🇧 English</a></li>
+					<li><a href="#" onclick="switchLanguage(event, 'de')">🇩🇪 Deutsch</a></li>
 			</ul>
 		</head>
-		<main id="main">
+		<main id="main" class="prose">
 			<h1>Hello! I’m Wenzel Massag,<br>your Design Engineer for<br>Human Interface Design.</h1>
 			<p>I’m all about appealing, user-friendly, intuitive and fast software. User-centred design drives me, and I treasure every opportunity to shape human-computer interfaces. Hire me to add tasteful human intelligence and a can-do attitude to your team!</p>
+			<p>email: <a href="mailto:mail@wenzelmassag.de">mail@wenzelmassag.de</a></p>
+			<p>phone: <a href="fon:00491748940954">+49 174 894 0 954</a></p>
+			<p><a href="https://indieweb.social/@stairjoke" rel="me">Mastodon,</a> <a href="https://bsky.app/profile/stairjoke.ninja" rel="me">BlueSky.</a></p>
+			<p><a href="/imprint">Imprint</a></p>
 		</main>
 	</body>
+	<!-- Enable switching the language cookie -->
+	<script src="/assets/scripts/language-cookie.js"></script>
 </html>

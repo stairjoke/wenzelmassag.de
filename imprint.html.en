@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 	<head>
 		<title>Wenzel Massag</title>
 		<meta charset="UTF-8">
@@ -22,18 +22,30 @@
 	<body>
 		<head>
 			<a href="#main" class="visually-hidden">jump to main content</a>
-			<ul id="language-switcher" aria-label="wähle eine Sprache">
+			<ul id="language-switcher" aria-label="pick a language">
 					<li><a href="#" onclick="switchLanguage(event, 'en')">🇬🇧 English</a></li>
 					<li><a href="#" onclick="switchLanguage(event, 'de')">🇩🇪 Deutsch</a></li>
 			</ul>
 		</head>
 		<main id="main" class="prose">
-			<h1>Hallo! Ich bin Wenzel Massag,<br>Ihr Design Engineer für<br>Human Interface Design.</h1>
-			<p>Mir liegen ansprechende, benutzerfreundliche, intuitive und schnelle Anwendungen besonders am Herzen. Nutzerzentriertes Design ist meine Leidenschaft, und ich schätze jede Gelegenheit, Mensch-Computer-Schnittstellen mitzugestalten. Ich bereichere Ihr Team mit geschmackvoller menschlicher Intelligenz und einer „Das schaffen wir!“-Einstellung!</p>
-			<p>E-Mail: <a href="mailto:mail@wenzelmassag.de">mail@wenzelmassag.de</a></p>
-			<p>Telefon: <a href="fon:00491748940954">+49 174 894 0 954</a></p>
-			<p><a href="https://indieweb.social/@stairjoke" rel="me">Mastodon,</a> <a href="https://bsky.app/profile/stairjoke.ninja" rel="me">BlueSky.</a></p>
-			<p><a href="/imprint">Impressum</a></p>
+			<h1>Site Notice</h1>
+
+			<p><a href="/">Back</a></p>
+
+			<p>Wenzel Massag<br />
+			Fenchelstr. 5<br />
+			69493 Hirschberg</p>
+
+			<h3>Contact</h3>
+			<p>Phone: +49 174 894 0 954<br />
+			E-mail: mail@wenzelmassag.de</p>
+
+			<h3>VAT ID</h3>
+			<p>Sales tax identification number according to Sect. 27 a of the Sales Tax Law:<br />
+			DE3 56 77 9191</p>
+
+			<h3>Dispute resolution proceedings in front of a consumer arbitration board</h3>
+			<p>We are not willing or obliged to participate in dispute resolution proceedings in front of a consumer arbitration board.</p>
 		</main>
 	</body>
 	<!-- Enable switching the language cookie -->

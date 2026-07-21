@@ -10,13 +10,6 @@ Options +MultiViews
 LanguagePriority en de
 ForceLanguagePriority Fallback
 
-# DETECT user chose language if available and save as cookie
-RewriteCond %{QUERY_STRING} (?:^|&)lang=auto(?:&|$) [NC]
-RewriteRule ^(.*)$ $1 [CO=pref_lang:deleted:wenzelmassag.de:-1:/,QSD,R=302,L]
-
-RewriteCond %{QUERY_STRING} (?:^|&)lang=(en|de)(?:&|$) [NC]
-RewriteRule ^(.*)$ $1 [CO=pref_lang:%1:wenzelmassag.de:576000:/,QSD,R=302,L]
-
-# USE user selected language
+# Map the JavaScript cookie to Apache's language negotiation variable
 SetEnvIf Cookie "pref_lang=en" prefer-language=en
 SetEnvIf Cookie "pref_lang=de" prefer-language=de

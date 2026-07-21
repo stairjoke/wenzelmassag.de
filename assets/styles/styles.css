@@ -1,0 +1,103 @@
+:root {
+	/* Sizes */
+	--1µ: 0.125rem;
+	--2µ: 0.25rem;
+
+	--line-height-05x: 0.625rem;
+	--line-height-1x: 1.25rem;
+	--line-height-2x: 2.5rem;
+	--line-height-3x: 3.75rem;
+	--line-height-4x: 5rem;
+	--line-height-6x: 7.5rem;
+
+	/* Colors */
+
+	--gradient-AA: linear-gradient(to right, #be8b13, #ca7d95 30%, #7a7cad 47%, #4795a9 64%, #4b84c5);
+	--text: black;
+	--link: #2D598B;
+}
+
+body {
+	font-size: 16px;
+	font-family: "swiza", sans-serif;
+	font-weight: 400;
+	line-height: 1.25;
+	color: var(--text);
+
+	padding: 1rem;
+	padding-bottom: 2rem;
+	max-width: 920px;
+}
+
+h1, h2 {
+	font-weight: 300;
+	font-size: 3rem;
+}
+
+h1 {
+	color: #4795a9;
+}
+
+@supports (text-fill-color: transparent) {
+		h1 {
+			background: var(--gradient-AA);
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+
+}
+@supports (-webkit-text-fill-color: transparent) {
+		h1 {
+			background: var(--gradient-AA);
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+}
+
+h3 {
+	line-height: var(--line-height-2x);
+}
+
+strong {
+	font-weight: 600;
+}
+
+.prose > * {
+	margin-block: var(--line-height-05x);
+}
+
+.visually-hidden {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: -200vw;
+}
+
+ul#language-switcher {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: max(auto, 1rem);
+
+	display: flex;
+	flex-direction: row;
+	gap: var(--line-height-05x);
+	list-style: none;
+
+	li {
+		display: inline-block;
+	}
+}
+
+a, a:link, a:active, a:visited {
+	color: var(--text);
+	text-decoration-line: solid;
+	text-decoration-thickness: var(--1µ);
+	text-underline-offset: var(--2µ);
+}
+
+a:hover, a:focus {
+	color: var(--link);
+	text-decoration-thickness: var(--2µ);
+	text-underline-offset: var(--1µ);
+}

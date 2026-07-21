@@ -28,12 +28,24 @@
 			</ul>
 		</head>
 		<main id="main" class="prose">
-			<h1>Hallo! Ich bin Wenzel Massag,<br>Ihr Design Engineer für<br>Human Interface Design.</h1>
-			<p>Mir liegen ansprechende, benutzerfreundliche, intuitive und schnelle Anwendungen besonders am Herzen. Nutzerzentriertes Design ist meine Leidenschaft, und ich schätze jede Gelegenheit, Mensch-Computer-Schnittstellen mitzugestalten. Ich bereichere Ihr Team mit geschmackvoller menschlicher Intelligenz und einer „Das schaffen wir!“-Einstellung!</p>
-			<p>E-Mail: <a href="mailto:mail@wenzelmassag.de">mail@wenzelmassag.de</a></p>
-			<p>Telefon: <a href="fon:00491748940954">+49 174 894 0 954</a></p>
-			<p><a href="https://indieweb.social/@stairjoke" rel="me">Mastodon,</a> <a href="https://bsky.app/profile/stairjoke.ninja" rel="me">BlueSky.</a></p>
-			<p><a href="/imprint">Impressum</a></p>
+			<h1>Impressum</h1>
+
+			<p><a href="/">Zurück</a></p>
+
+			<p>Wenzel Massag<br />
+			Fenchelstr. 5<br />
+			69493 Hirschberg</p>
+
+			<h3>Kontakt</h3>
+			<p>Telefon: +49 174 894 0 954<br />
+			E-Mail: mail@wenzelmassag.de</p>
+
+			<h3>Umsatzsteuer-ID</h3>
+			<p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
+			DE3 56 77 9191</p>
+
+			<h3>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h3>
+			<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 		</main>
 	</body>
 	<!-- Enable switching the language cookie -->
