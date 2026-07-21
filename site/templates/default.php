@@ -9,13 +9,13 @@
 				Display an image respecting light and dark mode, if the field `headlineType` is set to "image"
 			*/
 			if($page->headlineType() == "image"): ?>
-				<picture>
+				<h1 class="grid-row"><picture>
 				<?php $headlineImage = $page->headlineImage()->toFiles();
 				foreach($headlineImage as $image) : ?>
 					<source srcset="<?= $image->url() ?>" media="(prefers-color-scheme: <?= $image->colorscheme() ?>)" />
 				<?php endforeach; ?>
 					<img srcset="<?= $headlineImage->first()->url() ?>" alt="<?= $headlineImage->first()->alt() ?>" />
-				</picture>
+				</picture></h1>
 			<?php endif; // headline is image
 
 			/*
