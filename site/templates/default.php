@@ -30,7 +30,7 @@
 			foreach ($page->layout()->toLayouts() as $layout): ?>
 			<div class="grid-row">
 				<?php foreach ($layout->columns() as $column): ?>
-				<div class="column" style="--span:<?= $column->span() ?>">
+				<div class="column" style="--span:<?= $column->span(4) ?>">
 					<?= $column->blocks() ?>
 				</div>
 				<?php endforeach ?>
