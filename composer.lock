@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "356b9dd21a5012530322e47a14c434ad",
+    "content-hash": "382a2c2c83117accd9ca6a97d35c74e2",
     "packages": [
         {
             "name": "bnomei/kirby3-feed",
@@ -852,6 +852,44 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
             "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "sylvainjule/colorextractor",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sylvainjule/kirby-colorextractor.git",
+                "reference": "ce59c04d90e170fff0c76fee061e866a65db257c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sylvainjule/kirby-colorextractor/zipball/ce59c04d90e170fff0c76fee061e866a65db257c",
+                "reference": "ce59c04d90e170fff0c76fee061e866a65db257c",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "colorextractor"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                }
+            ],
+            "description": "Extract dominant / average color from any image.",
+            "support": {
+                "issues": "https://github.com/sylvainjule/kirby-colorextractor/issues",
+                "source": "https://github.com/sylvainjule/kirby-colorextractor/tree/2.0.0"
+            },
+            "time": "2024-03-10T09:55:03+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

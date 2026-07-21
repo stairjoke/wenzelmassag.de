@@ -29,3 +29,8 @@ fields:
         text:
           de: Dunkel
           en: dark
+  color:
+    type: color
+    label:
+      de: Dominante Farbe
+      en: Dominan color
