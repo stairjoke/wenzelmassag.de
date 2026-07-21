@@ -1,4 +1,4 @@
-<div class="responsive-card">
+<article class="responsive-card">
 	<?php if($title = $block->title()): ?>
 	<h3><?= $title ?></h3>
 	<?php endif; ?>
@@ -19,4 +19,4 @@ $sizes = "(max-width: 38rem) calc(100vw - 2rem),
 		<?= $text->kt() ?>
 	</div>
 	<?php endif; ?>
-</div>
+</article>
