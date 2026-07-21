@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<?php snippet('body.head'); ?>
+	<?php snippet('html.head'); ?>
 	<body>
 		<header></header>
 		<main>

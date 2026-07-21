@@ -7,7 +7,7 @@
 		'@auto'
 	]); ?>
 	<?php
-		snippet("body.head.Feeds");
-		snippet("body.head.OpenGraph");
+		snippet("html.head.Feeds");
+		snippet("html.head.OpenGraph");
 	?>
 </head>
