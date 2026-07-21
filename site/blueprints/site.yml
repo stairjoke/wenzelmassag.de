@@ -16,11 +16,10 @@ tabs:
         sections:
           pages:
             label:
-              *: pages
+              de: Seiten
+              en: Pages
             type: pages
-            layout: table
-            search: true
-            sortBy: status asc title asc
+            layout: list
   openGraph:
     label:
       de: Open Graph Einstellungen
