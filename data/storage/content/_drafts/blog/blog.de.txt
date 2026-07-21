@@ -1,0 +1,17 @@
+Title: Blog
+
+----
+
+Feedtitle: Custom Kirby Kit (Blog)
+
+----
+
+Categories: Beispielkategorie
+
+----
+
+Feeddescription: Custom Kirby Kit: Subscribe to all blog-posts. Example description.
+
+----
+
+Uuid: rm0wrorpasjpb3b4
