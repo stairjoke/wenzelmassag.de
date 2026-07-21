@@ -1,0 +1,108 @@
+@use '../ions/helpers';
+
+header {
+	padding-block-start: calc(var(--line-height)); //Otherwise the top-edge swallows the a.padding-block-start and squishes the links at the top-edge of the page.
+	margin-block-end: calc(var(--line-height) * 2);
+
+	nav {
+		// Layout
+		ol, li {
+			list-style: none;
+		}
+
+		ol {
+			display: flex;
+			justify-items: flex-end;
+			align-items: baseline;
+			margin: 0;
+			padding: 0;
+		}
+
+		& > ol {
+			margin: 0 calc(var(--line-height) / -2);
+		}
+
+		li a, .menu-toggle label {
+			padding-inline: calc(var(--line-height) / 2);
+			padding-block: calc(var(--line-height) / 4);
+			white-space: nowrap;
+		}
+
+		// Left-align the first nav item of the first nav-level
+		& > ol {
+			& > li:first-child {
+				justify-self: flex-start;
+				margin-inline-end: auto;
+			}
+			& > #menu-anchor {
+				position: relative;
+				z-index: 2;
+			}
+		}
+
+		// Link Styling
+		a, a:link, a:active, a:visited {
+			color: var(--color-text);
+			text-decoration-line: none;
+		}
+		a:hover, a:focus, a:focus-visible {
+			color: var(--color-text);
+			text-decoration-line: underline;
+		}
+		a:focus-visible {
+			outline: var(--color-ci-1-50) solid 2px;
+		}
+
+		// Nav item responsiveness
+		#menu-check {
+			position: absolute;
+			left: -5000px;
+		}
+
+		@media (width >= 38rem) {
+			.menu-toggle {
+				display: none;
+			}
+			#toggle-menu {
+				display: flex;
+			}
+		}
+		@media (width < 38rem) {
+			.logotype {
+				// Safari/Webkit bug causes underline thickness to be ignored when using display-flex. Workaround: Only flex when actually necessary, which is on small screens — which usually don’t support hover anyways.
+				display: flex;
+				flex-wrap: wrap;
+				gap: .5ch;
+			}
+			.menu-toggle {
+				display: inline;
+			}
+			#toggle-menu {
+				display: none;
+				padding: var(--gap-S);
+				background-color: var(--color-page);
+				position: absolute;
+				right: calc(var(--line-height) / 2);
+				top: calc(100% + (var(--line-height) / 2));
+				@include helpers.glass-look();
+
+				li {
+					position: static;
+					display: block;
+					margin: 0;
+					padding-inline: calc(var(--line-height) / 2);
+					padding-block: calc(var(--line-height) / 4);
+				}
+				a {
+					padding-inline: 0;
+					padding-block: calc(var(--line-height) / 2);
+				}
+			}
+			ol:has(#menu-check:checked) {
+				#toggle-menu {
+					display: block;
+				}
+			}
+		}
+	}
+}

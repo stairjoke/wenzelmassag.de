@@ -43,6 +43,9 @@ The article page allows setting an author, publishing date, teaser-text, categor
 Quotes from the README.md file included in Kirby’s Composerkit.
 
 ## Licenses
+### Kirby Static Site generator
+https://github.com/jonathan-reisdorf/kirby-static-site-generator/blob/main/LICENSE.txt
+
 ### The Custom Kirby Kit
 © 2025: Wenzel Massag (Entspannt.Digital). See LICENSE file included. Applicable to all features listed under "# Additional Features and Configurations" unless otherwise specified below.
 

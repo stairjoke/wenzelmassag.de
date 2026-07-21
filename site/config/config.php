@@ -95,6 +95,11 @@ return [
 				]
 			]
 		]
+	],
+	'jr' => [
+		'static_site_generator' => [
+			'base_url' => '/_testing-stuff/static/'
+		]
 	]
 ];
 ?>
