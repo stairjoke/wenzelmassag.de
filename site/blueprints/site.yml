@@ -14,6 +14,11 @@ tabs:
       column:
         width: 1/1
         sections:
+          fields:
+            fields:
+              logotype:
+                type: text
+                label: Logotype
           pages:
             label:
               de: Seiten
