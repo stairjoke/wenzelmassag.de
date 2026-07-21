@@ -1,0 +1,103 @@
+label: Browser
+icon: palette
+sections:
+  iATfields:
+    type: fields
+    extends: tabs/openGraph.extension
+    fields:
+      faviconInfo:
+        type: info
+        label:
+          de: Favikonen und Browser Stile
+          en: Favicons and browser styles
+        text:
+          de: |
+            Favikonen sind die kleinen Bildchen neben dem Namen eines Tabs. Sie erscheinen auch in den Lesezeichen/Favoriten und manche Suchmaschinen zeigen sie an.
+          en: |
+            Icons are the small images next to a tab’s name. They also appear in bookmarks and some search engines display them.
+      favicoDefault:
+        width: 1/2
+        type: files
+        label:
+          de: Standard Favikonen-Datei
+          en: Default favicon file
+        help:
+          de: .ICO | Sie sollte 64x64&nbsp;px groß sein, aber auch bei 16x16&nbsp;px und 32x32&nbsp;px gut aussehen.
+          en: .ICO | It should be 64x64&nbsp;px in size, but also look good at 16x16&nbsp;px and 32x32&nbsp;px.
+        max: 1
+        uploads: icon-favicon
+      favicoSVG:
+        width: 1/2
+        type: files
+        label:
+          de: Vektor-Favikonen (optional)
+          en: Vector based favicon files (optional)
+        help:
+          de: .SVG | Diese Datei wird nur von Google Chrome genutzt und ersetzt die Standard Favikonen-Datei.
+          en: .SVG | This file will only be used by Google Chrome and replaces the standard favicon file.
+        max: 1
+        uploads:
+          template: icon-svg
+      faviconMaskIcon:
+        width: 1/2
+        type: files
+        label:
+          de: Einfarbige Ikone für gepinnte Tabs. (optional)
+          en: Monochrome icon for pinned tabs. (optional)
+        help:
+          de: .SVG | Diese monochrome Vektordatei wird von Safari eingefärbt, abhängig davon ob das Gerät in Tag- oder Nachtmodus ist, und respektiert dabei die Akzemtfarbe des Webseiten-Designs.
+          en: .SVG | This monochrome vector file will be coloured by Safari depending on whether the device is in light or dark mode. It respects the accent colour of the website design.
+        max: 1
+        uploads:
+          template: icon-svg
+      themeColor:
+        width: 1/2
+        type: color
+        label:
+          de: Akzentfarbe
+          en: Theme color
+        icon: pipette
+        help:
+          de: Die Akzentfarbe wird von Browsern genutzt um die Favikone von gepinnten Tabs einzufärben und von Safari, um das Browserfenster visuell an die Seite anzupassen.
+          en: The accent colour will be used by browsers to colour the favicon of pinned tabs and by Safari to visually adapt the browser window to the page.
+      appIconInfo:
+        type: info
+        label:
+          de: Informationen zu App-Ikonen
+          en: Information about app icons
+        text:
+          de: |
+            iOS, Android und Windows zeigen App-Ikonen an, wenn die Favikonen zu klein sind. Dies passiert beispielsweise bei Push-Benachrichtigungen und wenn die Webseite dem Homebildschirm, Dock oder der Taskbar hinzugefügt wird. Auch Suchmaschinen nutzen App-Ikonen an manchen Stellen.
+          en: |
+            iOS, Android and Windows display app icons when favicons are too small. This happens, for example, with push notifications and when a website is added to the home screen, dock or taskbar. Search engines also use app icons in some instances.
+      appIcons:
+        type: files
+        label:
+          de: App-Ikonen
+          en: App icons
+        help:
+          de: |
+            Wenn ein:e Besucher:in diese Webseite zu ihrem Home-Bildschirm auf iPhone, iPad oder Android-Geräten hinzufügt, wid diese Ikone genutzt. Dadurch sieht sie aus wie eine App. Es müssen folgende Bildformate hochgeladen werden:
+
+            | **Größe** | **Dateiname** | **Info** |
+            | :-- | :-- | :-- |
+            | 60pt@2x | iphone-icon@2x.png | iPhone: 120x120&nbsp;px |
+            | 60pt@3x | iphone-icon@3x.png | iPhone: 180x180&nbsp;px |
+            | 83,5pt@2x | ipad-pro-icon@2x.png | iPad Pro: 167x167&nbsp;px |
+            | 76pt@2x | ipad-icon@2x.png | iPad, iPd mini: 152x152&nbsp;px |
+            | 128px | android-icon.png | Android |
+            | 192px | android-icon-HD | Android HD |
+          en: |
+            If a visitor adds this website to their home screen on iPhone, iPad or Android devices, this icon will be used. It will look like an app. The following image formats must be uploaded:
+
+            | **Size** | **File** | **Info** |
+            | :-- | :-- | :-- |
+            | 60pt@2x | iphone-icon@2x.png | iPhone: 120x120&nbsp;px |
+            | 60pt@3x | iphone-icon@3x.png | iPhone: 180x180&nbsp;px |
+            | 83,5pt@2x | ipad-pro-icon@2x.png | iPad Pro: 167x167&nbsp;px |
+            | 76pt@2x | ipad-icon@2x.png | iPad, iPd mini: 152x152&nbsp;px |
+            | 128px | android-icon.png | Android |
+            | 192px | android-icon-HD | Android HD |
+        max: 6
+        uploads:
+          template: icon-browser

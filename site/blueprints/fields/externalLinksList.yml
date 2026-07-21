@@ -1,0 +1,40 @@
+label: Links
+help:
+  de: |
+    Hier können Links zu anderen Seiten und Drittanbieterseiten hinterlegt werden, die auf der Seite veröffentlicht werden sollen. In dieser Liste kannst du Links zu sozialen Medien, Partnern usw. speichern.
+  en: |
+    Links to other websites and third-party sites can be added here. They will be displayed publicly. You can use this list to add links to social media, partners, etc.
+type: structure
+fields:
+  text:
+    label:
+      de: Link-Text
+      en: Link-text
+    type: text
+  rel:
+    label:
+      de: Verhältnis
+      en: Relation
+    type: checkboxes
+    options:
+      author:
+        de: Link zeigt auf Homepage etc. des Autors dieser Seite
+        en: Link points to the current page’s author (homepage, etc.).
+      external:
+        de: Link zeigt auf eine externe Webseite.
+        en: Link points to an external website.
+      license:
+        de: Der Hauptinhalt des aktuellen Dokuments fällt unter die Urheberrechtslizenz, die in dem referenzierten Dokument beschrieben ist.
+        en: The main content of the current document is covered by the copyright license described by the referenced document.
+      me:
+        de: Link zeigt auf ein Social Media Profil des Autors dieser Seite.
+        en: Link points to the current page’s social media profile.
+      next:
+        de: Das aktuelle Dokument ist Teil einer Serie und das nächste Dokument der Serie wird hier verlinkt.
+        en: The current document is part of a series. The link points to the next document in the series.
+      prev:
+        de: Das aktuelle Dokument ist Teil einer Serie und das vorhergehende Dokument der Serie wird hier verlinkt.
+        en: The current document is part of a series. The link points to the previous document in the series.
+  href:
+    label: URL
+    type: link
