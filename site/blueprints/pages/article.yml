@@ -68,7 +68,7 @@ columns:
                 To edit the list of categories, navigate to "Site" and the tab “Open Graph Settings”.
             options:
               type: query
-              query: site.OGCategories.split(",")
+              query: site.OGCategories?.split(",") ?? ""
           tags:
             type: tags
             help:
@@ -78,7 +78,7 @@ columns:
                 Tags get published as metadata.
             options:
               type: query
-              query: page.parent.childrenAndDrafts.pluck("tags", ",", true)
+              query: page.parent?.childrenAndDrafts.pluck("tags", ",", true) ?? []
       files:
         help:
           de: |
