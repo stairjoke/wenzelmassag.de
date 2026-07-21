@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+Redirect /proximity /public/downloads/Proximity-by-Wenzel-Massag_mail-AT-wenzelmassag.de.pdf
+Redirect /portfolio-de /public/downloads/Portfolio-DE-2026_4.pdf
+Redirect /portfolio-en /public/downloads/Portfolio-EN-2026_4.pdf
+</IfModule>

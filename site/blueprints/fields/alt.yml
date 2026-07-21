@@ -1,4 +1,0 @@
-type: text
-help:
-  de: Alternativtext. Erforderlich, damit das Bild von Screen-Readern gesehen wird. Zusätzlich kann eine Bildbeschreibung für den Einsatz des Bildes in Texten angegeben werden.
-  en: Alt-text. Required in order for screen readers to see the image. An additional caption can be specified for use in texts that display this image.
