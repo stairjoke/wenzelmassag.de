@@ -15,6 +15,15 @@
 	--gradient-AA: linear-gradient(to right, #be8b13, #ca7d95 30%, #7a7cad 47%, #4795a9 64%, #4b84c5);
 	--text: black;
 	--link: #2D598B;
+	--page: white;
+	--line: rgba(0, 0, 0, 0.34);
+
+	@media (prefers-color-scheme: dark) {
+		--text: white;
+		--link: #429aff;
+		--page: black;
+		--line: rgba(255, 255, 255, 0.34);
+	}
 }
 
 body {
@@ -25,7 +34,7 @@ body {
 	color: var(--text);
 
 	padding: 1rem;
-	padding-bottom: 2rem;
+	padding-bottom: calc(1rem + 2 * var(--line-height-2x));
 	max-width: 920px;
 }
 
@@ -74,10 +83,13 @@ strong {
 }
 
 ul#language-switcher {
-	position: absolute;
+	position: fixed;
 	bottom: 1rem;
-	left: 1rem;
-	right: max(auto, 1rem);
+
+	background: var(--page);
+	border-radius: var(--2µ);
+	padding: var(--2µ);
+	border: solid 1px var(--line);
 
 	display: flex;
 	flex-direction: row;
