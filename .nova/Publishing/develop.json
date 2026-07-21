@@ -7,8 +7,8 @@
     "README.md"
   ],
   "localPath" : ".",
-  "remotePath" : "\/sites\/wenzelmassag.de\/dev",
-  "remoteURL" : "https:\/\/wenzelmassag.de\/dev\/",
+  "remotePath" : "\/sites\/dev.wenzelmassag.de",
+  "remoteURL" : "https:\/\/dev.wenzelmassag.de\/",
   "server" : "WenzelMassag.de",
   "usesPublishing" : true
 }
