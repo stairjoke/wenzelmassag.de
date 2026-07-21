@@ -1,0 +1,12 @@
++ blueprint: file
+
+title:
+  de: Vektor Ikone
+  en: Vector based icon
+options:
+  changeTemplate: false
+accept:
+  mime:
+    - image/svg+xml
+fields:
+  alt: fields/alt

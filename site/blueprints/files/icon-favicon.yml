@@ -1,0 +1,10 @@
++ blueprint: file
+
+title:
+  de: Fav-Ikone
+  en: Favicon
+options:
+  changeTemplate: false
+accept:
+  mime:
+    - image/x-icon

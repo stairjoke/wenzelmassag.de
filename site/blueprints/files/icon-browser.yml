@@ -1,0 +1,11 @@
++ blueprint: file
+
+title:
+  de: App-Ikone
+  en: App-Icon
+options:
+  changeTemplate: false
+accept:
+  mime:
+    - image/png
+    - image/svg+xml

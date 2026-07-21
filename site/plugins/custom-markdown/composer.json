@@ -1,0 +1,16 @@
+{
+	"name": "stairjoke/custom-markdown",
+	"type": "kirby-plugin",
+	"description": "This plugin replaces the default markdown parser and changes how footnotes render",
+	"version": "1",
+	"license": "Copyright (c) 2025 Wenzel Massag, some rights reserved, see LICENSE file.",
+	"authors": [
+		{
+			"name": "Wenzel Massag",
+			"email": "wenzel@entspannt.digital"
+		}
+	],
+	"require": {
+		"michelf/php-markdown": "*"
+	}
+}

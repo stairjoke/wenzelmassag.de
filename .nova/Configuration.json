@@ -1,0 +1,3 @@
+"yaml.schemas": {
+  "/dev/kirby4-blueprints.schema.json": "site/blueprints/**/*.yml"
+}

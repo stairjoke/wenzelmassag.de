@@ -1,0 +1,217 @@
++ blueprint: site
+
+title:
+  de: Seite
+  en: Site
+
+tabs:
+  general:
+    label:
+      de: Allgemein
+      en: General
+    icon: dots
+    columns:
+      column:
+        width: 1/1
+        sections:
+          pages:
+            label:
+              *: pages
+            type: pages
+            layout: table
+            search: true
+            sortBy: status asc title asc
+  openGraph:
+    label:
+      de: Open Graph Einstellungen
+      en: Open Graph Settings
+    icon: sitemap
+    columns:
+      column:
+        sections:
+          openGraphFields:
+            type: fields
+            fields:
+              OGCategories:
+                width: 1/2
+                label:
+                  de: Verfügbare Kategorien für Artikel
+                  en: Available categories for articles
+                help:
+                  de: |
+                    Hier können Kategorien festgelegt werden, die beim Erstellen und Bearbeiten von Artikeln ausgewählt werden können.
+                  en: |
+                    Here you can define categories you’d like to be available when creating or editing articles.
+                type: tags
+                icon: list-bullet
+              description:
+                width: 1/2
+                label:
+                  de: Beschreibung
+                  en: Description
+                help:
+                  de: |
+                    Der Text wird der OpenGraph-Beschreibung genutzt, falls eine Seite keinen Teaser beinhaltet. Er wird beispielsweise von Google gezeigt und sollte nicht länger als 200 Zeichen sein.
+                  en: |
+                    This text will be used as OpenGraph description if a page does not contain a teaser text. Services such as Google display it inline as preview. It should not exceed 200 characters.
+                type: textarea
+                buttons: false
+                size: small
+                counter: true
+              ogImage:
+                label:
+                  de: Standard Vorschaubild
+                  en: Default preview image
+                help:
+                  de: Dieses Bild wird in iMessage, Signal, BlueSky, Mastodon, etc. angezeigt, wenn die Seite geteilt wird. Einzelne Seiten können dieses Bild überschreiben um die UX zu verbessern.
+                  en: This image will be displayed by iMessage, Signal, BlueSky, Mastodon, etc. when a user shares this website. Some pages may override this default to impove UX.
+                type: files
+                uploads: image
+                layout: cards
+                max: 1
+  metadata:
+    label:
+      de: Weitere Metadaten
+      en: Other metadata
+    icon: info
+    columns:
+      favicons:
+        width: 1/2
+        sections:
+          faviconsFields:
+            type: fields
+            fields:
+              info:
+                type: info
+                label:
+                  de: Favikonen und Browser Stile
+                  en: Favicons and browser styles
+                text:
+                  de: |
+                    Favikonen sind die kleinen Bildchen, die, meistens links, neben dem Namen eines Tabs angezeigt werden. Sie erscheinen auch in den Browserlesezeichen und manche Suchmaschinen zeigen sie an.
+                  en: |
+                    Favicons are the small images displayed, usually on the left, beside the name of a tab. They also appear in bookmarks and some search engines display them.
+                theme: none
+              favicoDefault:
+                type: files
+                label:
+                  de: Standard Favikonen-Datei
+                  en: Default favicon file
+                help:
+                  de: .ICO | Sie sollte 64x64&nbsp;px groß sein, aber auch bei 16x16&nbsp;px und 32x32&nbsp;px gut aussehen.
+                  en: .ICO | It should be 64x64&nbsp;px in size, but also look good at 16x16&nbsp;px and 32x32&nbsp;px.
+                max: 1
+                uploads: icon-favicon
+              themeColor:
+                type: color
+                label:
+                  de: Akzentfarbe
+                  en: Theme color
+                icon: pipette
+                help:
+                  de: Die Akzentfarbe wird von Browsern genutzt um die Favikone von gepinnten Tabs einzufärben und von Safari, um das Browserfenster visuell an die Seite anzupassen.
+                  en: The accent colour will be used by browsers to colour the favicon of pinned tabs and by Safari to visually adapt the browser window to the page.
+              favicoSVG:
+                type: files
+                label:
+                  de: Vektor-Favikonen (optional)
+                  en: Vector based favicon files (optional)
+                help:
+                  de: .SVG | Diese Datei wird nur von Google Chrome genutzt und ersetzt die Standard Favikonen-Datei.
+                  en: .SVG | This file will only be used by Google Chrome and replaces the standard favicon file.
+                max: 1
+                uploads:
+                  template: icon-svg
+              faviconMaskIcon:
+                type: files
+                label:
+                  de: Einfarbige Ikone für gepinnte Tabs. (optional)
+                  en: Monochrome icon for pinned tabs. (optional)
+                help:
+                  de: .SVG | Diese monochrome Vektordatei wird von Safari eingefärbt, abhängig davon ob das Gerät in Tag- oder Nachtmodus ist, und respektiert dabei die Akzemtfarbe des Webseiten-Designs.
+                  en: .SVG | This monochrome vector file will be coloured by Safari depending on whether the device is in light or dark mode. It respects the accent colour of the website design.
+                max: 1
+                uploads:
+                  template: icon-svg
+              appIcons:
+                type: files
+                label:
+                  de: App-Ikonen
+                  en: App icons
+                help:
+                  de: |
+                    Wenn ein:e Besucher:in diese Webseite zu ihrem Home-Bildschirm auf iPhone, iPad oder Android-Geräten hinzufügt, wid diese Ikone genutzt. Dadurch sieht sie aus wie eine App. Es müssen folgende Bildformate hochgeladen werden:
+
+                    | **Größe** | **Dateiname** | **Info** |
+                    | :-- | :-- | :-- |
+                    | 60pt@2x | iphone-icon@2x.png | iPhone: 120x120&nbsp;px |
+                    | 60pt@3x | iphone-icon@3x.png | iPhone: 180x180&nbsp;px |
+                    | 83,5pt@2x | ipad-pro-icon@2x.png | iPad Pro: 167x167&nbsp;px |
+                    | 76pt@2x | ipad-icon@2x.png | iPad, iPd mini: 152x152&nbsp;px |
+                    | 128px | android-icon.png | Android |
+                    | 192px | android-icon-HD | Android HD |
+                  en: |
+                    If a visitor adds this website to their home screen on iPhone, iPad or Android devices, this icon will be used. It will look like an app. The following image formats must be uploaded:
+
+                    | **Size** | **File** | **Info** |
+                    | :-- | :-- | :-- |
+                    | 60pt@2x | iphone-icon@2x.png | iPhone: 120x120&nbsp;px |
+                    | 60pt@3x | iphone-icon@3x.png | iPhone: 180x180&nbsp;px |
+                    | 83,5pt@2x | ipad-pro-icon@2x.png | iPad Pro: 167x167&nbsp;px |
+                    | 76pt@2x | ipad-icon@2x.png | iPad, iPd mini: 152x152&nbsp;px |
+                    | 128px | android-icon.png | Android |
+                    | 192px | android-icon-HD | Android HD |
+                max: 6
+                uploads:
+                  template: icon-browser
+      more:
+        width: 1/2
+        sections:
+          moreFields:
+            type: fields
+            fields:
+              currency:
+                label:
+                  de: Währung
+                  en: Currency
+                type: select
+                default: EUR
+                options:
+                  - EUR
+                  - CHF
+              links:
+                label: Links
+                type: structure
+                fields:
+                  text:
+                    label:
+                      de: Link-Text
+                      en: Link-text
+                    type: text
+                  rel:
+                    label:
+                      de: Verhältnis
+                      en: Relation
+                    type: checkboxes
+                    options:
+                      author:
+                        de: Link zeigt auf Homepage etc. des Autors dieser Seite
+                        en: Link points to the current page’s author (homepage, etc.).
+                      external:
+                        de: Link zeigt auf eine externe Webseite.
+                        en: Link points to an external website.
+                      license:
+                        de: Der Hauptinhalt des aktuellen Dokuments fällt unter die Urheberrechtslizenz, die in dem referenzierten Dokument beschrieben ist.
+                        en: The main content of the current document is covered by the copyright license described by the referenced document.
+                      me:
+                        de: Link zeigt auf ein Social Media Profil des Autors dieser Seite.
+                        en: Link points to the current page’s social media profile.
+                      next:
+                        de: Das aktuelle Dokument ist Teil einer Serie und das nächste Dokument der Serie wird hier verlinkt.
+                        en: The current document is part of a series. The link points to the next document in the series.
+                      prev:
+                        de: Das aktuelle Dokument ist Teil einer Serie und das vorhergehende Dokument der Serie wird hier verlinkt.
+                        en: The current document is part of a series. The link points to the previous document in the series.
+                  href:
+                    label: URL
+                    type: text

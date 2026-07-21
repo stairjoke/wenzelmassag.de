@@ -1,0 +1,16 @@
++ blueprint: file
+
+title:
+  de: Datei
+  en: File
+options:
+  changeTemplate: false
+
+extends: fields/uploads
+fields:
+  duration:
+    width: 1/2
+    type: text
+    label:
+      de: Dauer
+      en: Duration

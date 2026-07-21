@@ -1,0 +1,9 @@
++ blueprint: file
+
+title:
+  de: Datei
+  en: File
+options:
+  changeTemplate: false
+
+extends: fields/uploads

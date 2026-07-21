@@ -1,0 +1,23 @@
+type: group
+fields:
+  uploadUser:
+    width: 1/2
+    type: text
+    label:
+      de: Hochgeladen von
+      en: Uploaded by
+  uploadDate:
+    width: 1/2
+    type: date
+    label:
+      de: Upload Zeitpunkt
+      en: Upload date and time
+    time: true
+    default: now
+  caption:
+    width: 1/2
+    type: textarea
+    buttons: false
+    label:
+      de: Beschreibung (öffentlich)
+      en: Description (public)

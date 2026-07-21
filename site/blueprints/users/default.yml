@@ -1,0 +1,11 @@
+title:
+  *: user
+fields:
+  fediverseAccount:
+    label: Fediverse/Mastodon Account
+    help:
+      de: |
+        Der eingetragene Account wird als Autor für Artikel in den Open Graph Metadaten genutzt. Nutze das Format: "@user@server"
+      en: |
+        This account will be used as author for articles in the Open Graph metadata. Use this formatting: "@user@server"
+    type: text
