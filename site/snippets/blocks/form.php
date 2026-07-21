@@ -206,19 +206,19 @@
 						type="radio"
 						value="none"
 						<?= ($checked == "none" || $checked == "") ? "checked" : ""; ?>
-						/><?= t('no-preference') ?></label>
+						/><span><?= t('no-preference') ?></span></label>
 					<label><input
 						name="formBlockReplyVia"
 						type="radio"
 						value="phone"
 						<?= ($checked == "phone") ? "checked" : ""; ?>
-					/><?= t('callback') ?></label>
+					/><span><?= t('callback') ?></span></label>
 					<label><input
 						name="formBlockReplyVia"
 						type="radio"
 						value="email"
 						<?= ($checked == "email") ? "checked" : ""; ?>
-					/><?= t('email') ?></label>
+					/><span><?= t('email') ?></span></label>
 				</div>
 			</fieldset>
 
