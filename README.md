@@ -1,4 +1,4 @@
-# Custom Kirby Kit by Entspannt.Digital
+# Using Custom Kirby Kit by Entspannt.Digital
 This is an opinionated starting point for new Kirby websites. It adds functionality and configurations to Kirby. The Custom Kirby Kit (codeberg.org/stairjoke/kirby-custom-kit) builds on top of the Composerkit by Kirby (see below).
 
 # Additional Features and Configurations
@@ -45,6 +45,9 @@ Quotes from the README.md file included in Kirby’s Composerkit.
 ## Licenses
 ### The Custom Kirby Kit
 © 2025: Wenzel Massag (Entspannt.Digital). See LICENSE file included. Applicable to all features listed under "# Additional Features and Configurations" unless otherwise specified below.
+
+### Color Extrator
+[MIT,](https://github.com/sylvainjule/kirby-colorextractor) © 2024 Sylvian Jule
 
 ### Michelf/php-markdown
 [All rights reserved](https://github.com/michelf/php-markdown/blob/lib/License.md) © 2022 Michel Fortin
