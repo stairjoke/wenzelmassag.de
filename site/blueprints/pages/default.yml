@@ -1,6 +1,13 @@
 + blueprint: page
 
-title: Default Page
+title:
+  en: Layout
+  de: Layout
+options:
+  changeTemplate:
+    - text
+    - article
+    - default
 
 columns:
   main:

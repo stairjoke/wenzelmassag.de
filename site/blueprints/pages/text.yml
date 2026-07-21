@@ -1,6 +1,11 @@
 + blueprint: page
 
-title: Kirby-Text Page
+title: Text
+options:
+  changeTemplate:
+    - text
+    - article
+    - default
 
 columns:
   main:
