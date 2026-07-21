@@ -2,7 +2,7 @@
 	<nav>
 		<ol>
 			<li>
-				<a class="logotype" href="<?= $site->url() ?>" <?php e($page->isOpen(), 'aria-current=page') ?>><span>Entspannt.Digital</span> <span>Digital Design Studio</span></a>
+				<a class="logotype" href="<?= $site->url() ?>" <?php e($page->isHomePage(), 'aria-current=page') ?>><span>Entspannt.Digital</span> <span>Digital Design Studio</span></a>
 			</li>
 			<?php if($site->children()->count() > 0) : ?>
 				<li class="menu-toggle"><label for="menu-check"><span aria-hidden="true"><?= t('menu-toggle.label') ?></span><span class="visually-hidden"><?= t('menu-toggle.aria') ?></span></label><input type="checkbox" id="menu-check" /></li>
