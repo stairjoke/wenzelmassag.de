@@ -10,61 +10,32 @@ tabs:
       en: Form config
     icon: chat
     fields:
+      info:
+        type: info
+        label:
+          de: Information
+          en: Info
+        text:
+          de: |
+            Das Formular zeigt immer Formularfelder für Name, E-Mail, Telefon, Antwort-Präferenz und eine Nachricht an. Weitere Felder können nachfolgend aktiviert werden:
+          en: |
+            This form will always show input fields for name, email, phone, preferred reply method, and a message. Additional fields can be enabled below:
+      privacyURL:
+        type: pages
+        label:
+          de: Datenschutzerklärung auswählen
+          en: Select privacy agreement
+        min: 1
+        max: 1
       formFields:
         type: multiselect
         label:
-          de: Formuarfelder
-          en: Form fields
-        layout: list
-        min: 1
+          de: Optionale Formuarfelder
+          en: Optional form fields
         options:
-          name: Name
-          email:
-            de: E-Mail
-            en: eMail
-          fon:
-            de: Telefon
-            en: Phone
-          reply-via:
-            de: Antwort-Präferenz
-            en: Preferred reply method
-          message:
-            de: Nachricht
-            en: Message
           files:
             de: Dateianhang
             en: File attachments
           captcha:
             de: SPAM-Schutz
             en: SPAM-protection
-      privacyNotice:
-        type: textarea
-        size: tiny
-        label:
-          de: Datenschutzhinweis
-          en: Privacy info
-        help:
-          de: Denken Sie daran die Datenschutzerklärung zu verlinken!
-          en: Remember to link to the privacy policy!
-      successMessage:
-        type: textarea
-        label:
-          de: Erfolgsmeldung
-          en: Success message
-        help:
-          de: |
-            Diese Nachricht wird nach einem erfolgreichen Versand angezeigt.
-          en: |
-            This message will be displayed when a message was sent successfully.
-        counter: true
-      errorMessage:
-        type: textarea
-        label:
-          de: Fehlermeldung
-          en: Error message
-        help:
-          de: |
-            Diese Nachricht wird nach einem fehlgeschlagenen Versand angezeigt.
-          en: |
-            This message will be displayed when a message fails to send.
-        counter: true
