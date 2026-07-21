@@ -2,7 +2,8 @@ type: group
 fields:
   uploadUser:
     width: 1/2
-    type: text
+    type: users
+    max: 1
     label:
       de: Hochgeladen von
       en: Uploaded by
