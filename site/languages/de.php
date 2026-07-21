@@ -17,7 +17,7 @@ return [
 		'form-block.fon-placeholder' => "Altmodisch? Mag sein.",
 		'form-block.file-attachment' => "Dateianhang",
 		'form-block.name-placeholder' => "Wie darf ich Sie grüßen?",
-		'form-block.message-placeholder' => "Was sollte ich tun, admit Sie ein*e glückliche*r Kund*in werden?",
+		'form-block.message-placeholder' => "Was sollte ich tun, damit Sie ein*e glückliche*r Kund*in werden?",
 		'form-block.prefer-reply-via' => 'Präferenz • Rückruf oder E-Mail?',
 		'form-block.spam-protection' => "SPAM-Schutz",
 		'form-block.submit' => "Absenden",
