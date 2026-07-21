@@ -14,43 +14,7 @@ columns:
       fields:
         type: fields
         fields:
-          headlineType:
-            type: toggles
-            label:
-              de: Titel-Überschrift-Typ
-              en: Title-Headline kind
-            default: text
-            options:
-              - value: text
-                text: Text
-                icon: h1
-              - value: image
-                text:
-                  de: Bild
-                  en: Image
-                icon: image
-          headlineImage:
-            when:
-              headlineType: image
-            label:
-              de: Titel-Überschrift-Bild
-              en: Title-Headline-Image
-            type: files
-            max: 2
-            layout: cards
-            uploads: image
-          headlineMaxWidth:
-            when:
-              headlineType: image
-            label:
-              de: Titel-Überschrift-Bild max. Breite
-              en: Titel-Headline-Image max. width
-            type: range
-            min: 50
-            max: 100
-            default: 100
-            tooltip:
-              after: "%"
+          extends: fields/pageTitle
           layout:
             type: layout
             layouts:

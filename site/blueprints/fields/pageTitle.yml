@@ -1,0 +1,54 @@
+type: group
+fields:
+  headlineType:
+    type: toggles
+    label:
+      de: Überschriftstytyp
+      en: Heading Variant
+    default: text
+    options:
+      - value: text
+        text: Text
+        icon: h1
+      - value: image
+        text:
+          de: Bild
+          en: Image
+        icon: image
+  pageTitle:
+    label:
+      de: Hauptüberschrift (H1)
+      en: Main Heading (H1)
+    type: text
+    help:
+      de: |
+        Die Hauptüberschrift wird auf der Seite angezeigt wenn der Überschriftstytyp „Text“ gewählt ist. Sie wird immer für Suchmaschinen, sowie OpenGraph veröffentlicht.
+      en: |
+        The main heading is displayed on the page when the heading variant ‘Text’ is selected. It is always published for search engines and OpenGraph.
+  headlineImage:
+    when:
+      headlineType: image
+    label:
+      de: Überschrift-Bild
+      en: Headline-Image
+    help:
+      de: |
+        Optional kann ein zweites Bild für den Dunkelmodus hochgeladen werden.
+      en: |
+        Optionally, a second image can be uploaded for dark mode.
+    type: files
+    max: 2
+    layout: cards
+    uploads: image
+  headlineMaxWidth:
+    when:
+      headlineType: image
+    label:
+      de: Überschrift-Bild max. Breite
+      en: Headline-Image max. width
+    type: range
+    min: 50
+    max: 100
+    default: 100
+    tooltip:
+      after: "%"
