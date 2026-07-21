@@ -14,8 +14,12 @@
 
 <form class="form-block">
 	<?php
-		$one = rand(1, 5); $two = rand(1, 5);
-		if($name) : ?>
+		$one = rand(1, 5);
+		$two = rand(2, 5); // Must be larger than 2 and may only be one digit long for SPAM detection
+	?>
+	<input type="hidden" name="formBlockOne" value="<?= $one ?>" />
+	<input type="hidden" name="formBlockTwo" value="<?= $two ?>" />
+	<?php if($name) : ?>
 	<div class="input name">
 		<label for="name"><?= t('name', 'Name') ?>*</label>
 		<input id="name" name="formBlockName" type="text" placeholder="<?= t('form-block.name-placeholder', 'How may I call you?') ?>" required autocomplete="name" />
@@ -34,7 +38,7 @@
 	<?php if($fon): ?>
 	<div class="input fon">
 		<label for="fon"><?= t('phone', 'Phone') ?>*</label>
-		<input id="fon" name="formBlockFon" type="tel" placeholder="<?= t('form-block.fon-placeholder', "Old fashioned? Maybe.") ?>" required autocomplete="work tel" />
+		<input id="fon" name="formBlockFon" type="tel" placeholder="<?= t('form-block.fon-placeholder', "Old fashioned? Maybe.") ?>" required autocomplete="work tel" pattern="\+*[0-9]{5,}" />
 	</div>
 	<?php endif;
 	if($replyVia): ?>
@@ -50,7 +54,7 @@
 	if($message): ?>
 	<div class="input message big">
 		<label for="message"><?= t('message', 'Message') ?>*</label>
-		<textarea id="message" name="formBlockMessage" placeholder="<?= t('form-block.message-placeholder', "How do I make you a happy customer?") ?>" required></textarea>
+		<textarea id="message" name="formBlockMessage" placeholder="<?= t('form-block.message-placeholder', "How do I make you a happy customer?") ?>"></textarea>
 	</div>
 	<?php endif;
 	if($files): ?>
@@ -66,7 +70,7 @@
 	</div>
 	<?php endif ?>
 
-	<input name="formBlockKey" type="hidden" value="<?= e($captcha, "1" . hash('md5', $one + $two), "0" . hash('md5', $one + $two)) ?>" />
+	<input name="formBlockKey" type="hidden" value="<?= e($captcha, "1" . hash('md5', $one + $two), $two . hash('md5', $one + $two)) ?>" />
 
 	<div class="input privacy big">
 		<label><input type="checkbox" value="formBlockPrivacy" required autocomplete="off" /> <?= $block->privacyNotice()->kt() ?></label>
