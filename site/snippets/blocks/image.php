@@ -30,7 +30,7 @@ if ($block->location() == 'web') {
 	<?php endif ?>
 
 	<?php if ($caption->isNotEmpty()): ?>
-	<figcaption>
+	<figcaption inert>
 		<p><?= $caption ?></p>
 	</figcaption>
 	<?php endif ?>
