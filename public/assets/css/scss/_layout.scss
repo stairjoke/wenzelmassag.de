@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	display: grid;
+
+	// 47+ REM Viewport Width
+	grid-template-columns: auto minmax(22rem, 33rem) minmax(22rem, 33rem) auto;
+
+	grid-template-areas:
+	". head head ."
+	"main main main main"
+	". foot foot .";
+
+	column-gap: var(--column-gap);
+}
+
+header {
+	grid-area: head;
+}
+
+body > footer {
+	grid-area: foot;
+	margin-block: var(--row-gap);
+	border-top: solid 1px var(--color-decorations);
+	padding-top: var(--line-height);
+}
+
+main {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: subgrid;
+	column-gap: var(--column-gap);
+	row-gap: var(--line-height); // Must be consistent with text to allow splitting up paragraphs into layouts
+	min-height: calc(100vh - var(--column-gap) - (var(--line-height) * 6) - var(--section-gap));
+
+	.grid-row {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: subgrid;
+
+		&.splash {
+			min-height: calc(90vh - var(--column-gap) - (var(--line-height) * 10) - var(--section-gap));
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		// Place column right of middle
+		.column {
+			grid-column: 3 / span var(--span);
+		}
+
+		// Place column left of middle
+		.column:first-child {
+			grid-column: 2 / span var(--span);
+		}
+
+		// Place column right of middle and extend span to extra column
+		.column.breakout {
+			grid-column: 3 / span calc(var(--span) + 1);
+		}
+
+		// Place column left of middle and extend over extra column
+		.column.breakout:first-child {
+			grid-column: 1 / span calc(var(--span) + 1);
+		}
+
+		// Place column over all available columns
+		.column.breakout:only-child {
+			grid-column: 1 / -1;
+		}
+	}
+}
+
+main.text {
+	display: block;
+	grid-column: 2 / span 2;
+}
+
+footer {
+	grid-area: foot;
+}
+
+@media (width < 47rem) {
+	body {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+
+		grid-template-areas:
+		"head head"
+		"main main"
+		"foot foot";
+
+		margin: 0 1rem;
+	}
+
+	main > .grid-row {
+		// Place column right of middle, override .breakout extra columns
+		.column, .column.breakout {
+			grid-column: 2 / span var(--span);
+		}
+
+		// Place column left of middle, override .breakout extra columns
+		.column:first-child, .column.breakout:first-child {
+			grid-column: 1 / span var(--span);
+		}
+	}
+	main.text {
+		display: block;
+		grid-column: unset;
+	}
+}
+
+@media (width < 38rem) {
+	body, main, main > .grid-row {
+		display: block;
+	}
+}

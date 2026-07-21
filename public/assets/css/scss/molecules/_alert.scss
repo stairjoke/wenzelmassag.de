@@ -1,0 +1,23 @@
+.alert {
+  border: solid var(--line-thickness) var(--color-ci-1-50);
+  border-radius: var(--border-radius);
+  background: var(--color-neutral-bg);
+
+  padding: var(--gap);
+  margin-block: var(--line-height);
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  &.positive {
+    border-color: var(--color-success);
+    background: var(--color-success-bg);
+
+  }
+
+  &.negative {
+    border-color: var(--color-error);
+    background: var(--color-error-bg);
+
+  }
+}
