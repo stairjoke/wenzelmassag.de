@@ -23,6 +23,7 @@ Icon
 *.sublime-workspace
 /.vscode
 /.idea
+/.nova
 
 # Composer dependencies
 # ---------------------
