@@ -25,9 +25,7 @@
     "php": "~8.5",
     "getkirby/cms": "^5.0",
     "michelf/php-markdown": "^2.0",
-    "bnomei/kirby3-feed": "^5.0",
-    "sylvainjule/colorextractor": "^2.0",
-    "jreisdorf/kirby-static-site-generator": "^2.4"
+    "bnomei/kirby3-feed": "^5.0"
   },
   "config": {
     "allow-plugins": {

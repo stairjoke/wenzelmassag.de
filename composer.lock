@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d82b4161c73c84db47caee1eb70f6c83",
+    "content-hash": "47c984ba19859f702df4f2f06a901828",
     "packages": [
         {
             "name": "bnomei/kirby3-feed",
@@ -485,43 +485,6 @@
             "time": "2020-12-28T12:54:39+00:00"
         },
         {
-            "name": "jreisdorf/kirby-static-site-generator",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jonathan-reisdorf/kirby-static-site-generator.git",
-                "reference": "1ee2a89b1b9786ccddf298e525981d34d988d99a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jonathan-reisdorf/kirby-static-site-generator/zipball/1ee2a89b1b9786ccddf298e525981d34d988d99a",
-                "reference": "1ee2a89b1b9786ccddf298e525981d34d988d99a",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.1"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "installer-name": "static-site-generator"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Reisdorf"
-                }
-            ],
-            "description": "Static site generator plugin for Kirby 3, 4 and 5",
-            "support": {
-                "issues": "https://github.com/jonathan-reisdorf/kirby-static-site-generator/issues",
-                "source": "https://github.com/jonathan-reisdorf/kirby-static-site-generator/tree/2.4.0"
-            },
-            "time": "2026-04-06T07:24:54+00:00"
-        },
-        {
             "name": "laminas/laminas-escaper",
             "version": "2.18.0",
             "source": {
@@ -884,44 +847,6 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
             "time": "2024-09-11T13:17:53+00:00"
-        },
-        {
-            "name": "sylvainjule/colorextractor",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sylvainjule/kirby-colorextractor.git",
-                "reference": "1591c7acfa6af5e9998d68022c4f11309159c31d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sylvainjule/kirby-colorextractor/zipball/1591c7acfa6af5e9998d68022c4f11309159c31d",
-                "reference": "1591c7acfa6af5e9998d68022c4f11309159c31d",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.1"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "installer-name": "colorextractor"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sylvain Julé",
-                    "email": "contact@sylvain-jule.fr"
-                }
-            ],
-            "description": "Extract dominant / average color from any image.",
-            "support": {
-                "issues": "https://github.com/sylvainjule/kirby-colorextractor/issues",
-                "source": "https://github.com/sylvainjule/kirby-colorextractor/tree/2.1.0"
-            },
-            "time": "2025-08-05T20:38:57+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
