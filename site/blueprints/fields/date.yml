@@ -1,0 +1,8 @@
+type: date
+time: true
+step:
+  unit: minute
+  size: 1
+label:
+  de: Datum
+  en: date

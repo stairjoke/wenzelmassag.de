@@ -1,5 +1,15 @@
 type: group
 fields:
+  pageTitle:
+    label:
+      de: Hauptüberschrift (H1, optional)
+      en: Main Heading (H1, optional)
+    type: text
+    help:
+      de: |
+        Die Hauptüberschrift wird auf der Seite angezeigt wenn der Überschriftstytyp „Text“ gewählt ist. Sie wird immer für Suchmaschinen, sowie OpenGraph veröffentlicht. Wird keine angegeben, wird der Seitenname genutzt.
+      en: |
+        The main heading is displayed on the page when the heading variant ‘Text’ is selected. It is always published for search engines and OpenGraph. If none is specified, the page name will be used.
   headlineType:
     type: toggles
     label:
@@ -15,16 +25,6 @@ fields:
           de: Bild
           en: Image
         icon: image
-  pageTitle:
-    label:
-      de: Hauptüberschrift (H1)
-      en: Main Heading (H1)
-    type: text
-    help:
-      de: |
-        Die Hauptüberschrift wird auf der Seite angezeigt wenn der Überschriftstytyp „Text“ gewählt ist. Sie wird immer für Suchmaschinen, sowie OpenGraph veröffentlicht.
-      en: |
-        The main heading is displayed on the page when the heading variant ‘Text’ is selected. It is always published for search engines and OpenGraph.
   headlineImage:
     when:
       headlineType: image

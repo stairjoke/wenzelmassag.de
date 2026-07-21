@@ -1,8 +1,6 @@
-+ blueprint: file
-
 title:
-  de: Vektor Ikone
-  en: Vector based icon
+  de: Vektorgrafik SVG
+  en: SVG vector graphics
 options:
   changeTemplate: false
 accept:

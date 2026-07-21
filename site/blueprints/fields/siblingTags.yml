@@ -1,0 +1,4 @@
+type: tags
+options:
+  type: query
+  query: page.parent?.childrenAndDrafts.pluck("tags", ",", true) ?? []

@@ -1,0 +1,14 @@
+help:
+  de: |
+    Maximal 24:00:00 (24 Stunden) im Format HH:mm:ss
+  de: |
+    Maximum 24:00:00 (24 hours) formatted HH:mm:ss
+type: time
+display: HH:mm:ss
+notation: 24
+step:
+  unit: second
+  size: 1
+label:
+  de: Dauer
+  en: Duration

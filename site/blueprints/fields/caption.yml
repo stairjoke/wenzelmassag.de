@@ -1,0 +1,5 @@
+type: textarea
+buttons: false
+label:
+  de: Beschreibung (öffentlich)
+  en: Description (public)

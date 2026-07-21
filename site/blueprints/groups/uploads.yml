@@ -15,10 +15,9 @@ fields:
       en: Upload date and time
     time: true
     default: now
+  alt:
+    extends: fields/alt
+    width: 1/2
   caption:
-    width: 1/3
-    type: textarea
-    buttons: false
-    label:
-      de: Beschreibung (öffentlich)
-      en: Description (public)
+    extends: fields/caption
+    width: 1/2

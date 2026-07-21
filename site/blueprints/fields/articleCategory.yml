@@ -1,0 +1,7 @@
+type: select
+label:
+  de: Kategorie
+  en: Kategorie
+options:
+  type: query
+  query: site.OGCategories?.split(",") ?? ""

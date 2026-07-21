@@ -6,47 +6,6 @@ title:
 options:
   changeTemplate: false
 
-extends: fields/uploads
+extends: groups/uploads
 accept:
   type: image
-fields:
-  alt:
-    width: 1/3
-    extends: fields/alt
-  colorScheme:
-    width: 1/3
-    type: select
-    translate: false
-    label:
-      de: Farbschema
-      en: Color-Scheme
-    options:
-      - value: light
-        text:
-          de: Hell
-          en: Light
-      - value: dark
-        text:
-          de: Dunkel
-          en: dark
-  color:
-    width: 1/2
-    type: color
-    label:
-      de: Dominante Farbe
-      en: Dominan color
-  shadow:
-    width: 1/2
-    type: toggle
-    default: true
-    translate: false
-    label:
-      de: Schlagschatten
-      en: Drop-Shadow
-    text:
-      -
-        de: kein Schatten
-        en: no shadow
-      -
-        de: Schatten
-        en: Shadow

@@ -14,7 +14,7 @@ columns:
       fields:
         type: fields
         fields:
-          extends: fields/pageTitle
+          extends: groups/pageTitle
           layout:
             type: layout
             layouts:
@@ -30,4 +30,7 @@ columns:
         type: pages
       files:
         type: files
+      meta:
+        type: fields
+        extends: groups/sidebarFields
 

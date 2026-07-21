@@ -1,11 +1,9 @@
-+ blueprint: file
-
 title:
-  de: Datei
-  en: File
+  de: Dokument
+  en: Document
 options:
   changeTemplate: false
 
-extends: fields/uploads
+extends: groups/uploads
 accept:
   type: document

@@ -1,0 +1,11 @@
+type: users
+label:
+  de: Autor
+  en: Author
+help:
+  de: |
+    Die Information wird genutzt um Metadaten zum Artikel zu veröffentlichen.
+  en: |
+    This data is used to publish metadata with the article.
+default: true
+max: 1

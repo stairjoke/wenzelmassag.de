@@ -1,18 +1,13 @@
-+ blueprint: file
-
 title:
-  de: Datei
-  en: File
+  de: Audiodatei
+  en: Audio file
 options:
   changeTemplate: false
 
-extends: fields/uploads
+extends: groups/uploads
 accept:
   type: audio
 fields:
   duration:
+    extends: fields/duration
     width: 1/2
-    type: text
-    label:
-      de: Dauer
-      en: Duration

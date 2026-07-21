@@ -1,0 +1,9 @@
+type: group
+fields:
+  author:
+    extends: fields/author
+  pubDate:
+    extends: fields/date
+    label:
+      de: Datum „zuletzt aktualisiert“
+      en: “Last updated” date

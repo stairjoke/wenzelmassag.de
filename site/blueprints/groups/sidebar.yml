@@ -1,0 +1,8 @@
+sections:
+  meta:
+    type: fields
+    extends: groups/sidebarFields
+  pages:
+    type: pages
+  files:
+    type: files

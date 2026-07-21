@@ -1,9 +1,7 @@
-+ blueprint: file
-
 title:
   de: Datei
   en: File
 options:
   changeTemplate: true
 
-extends: fields/uploads
+extends: groups/uploads
