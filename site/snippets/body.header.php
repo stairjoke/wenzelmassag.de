@@ -5,14 +5,17 @@
 				<a class="logotype" href="<?= $site->url() ?>" <?php e($page->isHomePage(), 'aria-current=page') ?>><span>Entspannt.Digital</span> <span>Digital Design Studio</span></a>
 			</li>
 			<?php if($site->children()->count() > 0) : ?>
-				<li class="menu-toggle"><label for="menu-check"><span aria-hidden="true"><?= t('menu-toggle.label') ?></span><span class="visually-hidden"><?= t('menu-toggle.aria') ?></span></label><input type="checkbox" id="menu-check" /></li>
-				<ol class="toggle-menu">
-					<?php foreach($site->children()->listed() as $item): ?>
-					<li>
-						<a href="<?= $item->url() ?>" <?php e($item->isOpen(), 'aria-current=page') ?>><?= $item->title() ?></a>
-					</li>
-					<?php endforeach; ?>
-				</ol>
+				<li class="menu-toggle">
+					<label for="menu-check"><span aria-hidden="true"><?= t('menu-toggle.label') ?></span><span class="visually-hidden"><?= t('menu-toggle.aria') ?></span></label><input type="checkbox" id="menu-check" role="switch" />
+					<ol class="toggle-menu" aria-label="<?= t('menu-toggle.menu-list-label') ?>">
+						<?php foreach($site->children()->listed() as $item): ?>
+						<li>
+							<a href="<?= $item->url() ?>" <?php e($item->isOpen(), 'aria-current=page') ?>><?= $item->title() ?></a>
+						</li>
+						<?php endforeach; ?>
+					</ol>
+				</li>
+
 			<?php endif; ?>
 		</ol>
 	</nav>

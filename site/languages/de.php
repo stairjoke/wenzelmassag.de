@@ -43,6 +43,7 @@ return [
 		'message' => 'Nachricht',
 		'menu-toggle.label' => 'Menü',
 		'menu-toggle.aria' => 'Navigation ein und ausblenden',
+		'menu-toggle.menu-list-label' => 'Menü',
 		'name' => 'Name',
 		'no-preference' => 'Keine Präferenz',
 		'phone' => 'Telefon'
