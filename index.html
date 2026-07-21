@@ -8,6 +8,30 @@
 		<!-- Learn more: https://github.com/dweekly/ai-content-disclosure -->
 
 		<style>
+			// Swiza is available in
+			// - THIN (100)
+			// - EXTRA LIGHT (200)
+			// - LIGHT (300)
+			// - REGULAR (400)
+			// - MEDIUM (500)
+			// - SEMI BOLD (600)
+			// - BOLD (700)
+			// There is no extra bold (800) or black (900) available.
+
+			// It is important to use the correct weight-number in @font-face, some browsers will otherwise attempt to generate weights by fattening to thinning fonts!
+
+			// Font foundry: https://www.atipofoundry.com, not a sponsor ;)
+
+			@font-face {
+					font-family: 'swiza';
+					src: url('/assets/fonts/swiza-extralight-webfont.eot');
+					src: url('/assets/fonts/swiza-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+							 url('/assets/fonts/swiza-extralight-webfont.woff2') format('woff2'),
+							 url('/assets/fonts/swiza-extralight-webfont.woff') format('woff'),
+							 url('/assets/fonts/swiza-extralight-webfont.ttf') format('truetype');
+					font-weight: 200;
+					font-style: normal;
+			}
 			@font-face {
 					font-family: 'swiza';
 					src: url('/assets/fonts/swiza-light-webfont.eot');
@@ -25,7 +49,7 @@
 							 url('/assets/fonts/swiza-regular-webfont.woff2') format('woff2'),
 							 url('/assets/fonts/swiza-regular-webfont.woff') format('woff'),
 							 url('/assets/fonts/swiza-regular-webfont.ttf') format('truetype');
-					font-weight: 500;
+					font-weight: 400;
 					font-style: normal;
 			}
 			@font-face {
@@ -40,6 +64,7 @@
 			}
 			body {
 				font-family: "swiza", sans-serif;
+				font-weight: 400;
 			}
 		</style>
 	</head>
