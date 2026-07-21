@@ -84,16 +84,6 @@ return [
 				]
 			]
 		]
-	]/*'email' => [
-		'transport' => [
-			'type' => 'smtp',
-			'host' => '',
-			'port' => 465,
-			'security' => true,
-			'auth' => true,
-			'username' => '',
-			'password' => ''
-		]
-	],*/
+	]
 ];
 ?>
