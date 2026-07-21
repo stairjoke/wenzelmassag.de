@@ -10,3 +10,4 @@ To use this custom Kirby kit, you must create your own repository and set the ki
 ## Update
 1. Fetch all the latest releases: `git fetch upstream --tags` - This repository uses tags to version, learn more about tags here: [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging). You can see all tags, and filter the list for versions like so: `git tag -l "v1.*"`. This shows all v1.X releases.
 2. To get the version of your choice, checkout your `develop` branch and merge the release into it. Example for version 1.0: `git checkout develop && git merge v1.0`
+3. Run `composer install` to install the latest version of all dependencies, including Kirby itself.
