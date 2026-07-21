@@ -32,7 +32,7 @@ return [
 		'form-block.message-placeholder' => "Wie mache ich Sie zum glücklichen Kunde?",
 		'form-block.obligatory' => "Erforderliche Angabe.",
 		'form-block.prefer-reply-via' => 'Präferenz • Rückruf oder E-Mail?',
-		'form-block.privacy-checkbox-label' => 'Ich habe die (link: {URL} text: Datenschutzerklärung target: _blank) gelesen, verstanden und bin einverstanden.',
+		'form-block.privacy-checkbox-label' => 'Ich habe die (link: {URL} text: Datenschutzerklärung target: _blank) gelesen, verstanden und bin einverstanden.*',
 		'form-block.spam-rejected' => "<em>Ihre Nachricht wurde als SPAM abgelehnt!</em> Die wird nicht zugestellt. Falls dies ein Fehler ist, senden Sie mit bitte eine E-Mail direkt und nicht über das Formular.",
 		'form-block.spam-protection' => "SPAM-Schutz",
 		'form-block.spam-challenge' => "Bitte addieren Sie diese beiden Zahlen und tragen Sie das Ergebnis ein",
