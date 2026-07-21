@@ -1,0 +1,58 @@
++ blueprint: page
+
+title: Kirby-Text Page
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          text:
+            type: textarea
+            size: huge
+  sidebar:
+    width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          author:
+            type: users
+            label:
+              de: Autor
+              en: Author
+            help:
+              de: |
+                Die Information wird genutzt um Metadaten zum Artikel zu veröffentlichen.
+              en: |
+                This data is used to publish metadata with the article.
+            default: true
+            max: 1
+          date:
+            type: date
+            time: true
+            label:
+              de: Veröffentlichungs-Datum
+              en: Publishing date
+          teaser:
+            type: textarea
+            buttons: false
+            counter: true
+            help:
+              de: |
+                Der Teaser-Text wird im RSS-Feed und in der OpenGraph-Beschreibung genutzt. Er wird beispielsweise von Google gezeigt und sollte nicht länger als 200 Zeichen sein.
+              en: |
+                The teaser will be used in the RSS-feed and as OpenGraph description. Services such as Google display it inline as preview. It should not exceed 200 characters.
+            label:
+              de: Teaser-Text
+              en: Teaser
+            size: small
+      files:
+        help:
+          de: |
+            Eine Liste aller Dateien, die dieser Seite zugeordnet sind.
+          en: |
+            A list of all files associated with this page.
+        type: files
