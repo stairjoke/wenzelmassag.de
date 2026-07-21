@@ -1,5 +1,22 @@
-<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
 Redirect /proximity /public/downloads/Proximity-by-Wenzel-Massag_mail-AT-wenzelmassag.de.pdf
 Redirect /portfolio-de /public/downloads/Portfolio-DE-2026_4.pdf
 Redirect /portfolio-en /public/downloads/Portfolio-EN-2026_4.pdf
-</IfModule>
+
+# Enabling native language support in Apache, no CMS required!
+Options +MultiViews
+LanguagePriority en de
+ForceLanguagePriority Fallback
+
+# DETECT preferred user language
+# If "?lang=xx" is in the URL, set "pref_lang"-cookie
+# Bake a cookie: name=pref_lang, value=%1 (the lang code), domain=current, expire= 400 days in minutes, Path=/
+RewriteCond %{QUERY_STRING} (?:^|&)lang=(en|de)(?:&|$) [NC]
+RewriteRule ^(.*)$ $1 [CO=pref_lang:%1:.:576000:/,QSD,R=302,L]
+
+# USE preferred language
+# If the "pref_lang" cookie exists, tell Apache to overwrite the browser's language request.
+RewriteCond %{HTTP_COOKIE} pref_lang=(en|de) [NC]
+RewriteRule ^ - [E=HTTP_ACCEPT_LANGUAGE:%1]

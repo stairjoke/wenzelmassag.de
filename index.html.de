@@ -69,8 +69,11 @@
 		</style>
 	</head>
 	<body>
-		<h1>Hi!</h1>
-		<p>Keep the tab open or just bookmark me, I’ll start work on this site soon.</p>
-		<p>Get in touch: mail@wenzelmassag.de</p>
+		<h1>Hallo! Ich bin Wenzel Massag,<br>Ihr Design Engineer für<br>Human Interface Design.</h1>
+		<p>Mir liegen ansprechende, benutzerfreundliche, intuitive und schnelle Anwendungen besonders am Herzen. Nutzerzentriertes Design ist meine Leidenschaft, und ich schätze jede Gelegenheit, Mensch-Computer-Schnittstellen mitzugestalten. Ich bereichere Ihr Team mit geschmackvoller menschlicher Intelligenz und einer „Das schaffen wir!“-Einstellung!</p>
 	</body>
+	<!-- Language Switcher UI Links -->
+	<div class="language-switcher">
+			<a href="?lang=en">EN</a> | <a href="?lang=de">DE</a>
+	</div>
 </html>
