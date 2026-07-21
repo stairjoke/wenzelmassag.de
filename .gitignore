@@ -11,28 +11,6 @@ Icon
 !/public/media/index.html
 /dev/php_errors.log
 
-# Large files
-# -------------
-
-*.avi
-*.mkv
-*.mov
-*.mp4
-*.webm
-*.wmv
-
-*.mp3
-*.wav
-*.aac
-*.flac
-*.ogg
-
-*.zip
-*.rar
-*.7z
-*.tar
-*.gz
-
 # Lock files
 # ---------------
 
