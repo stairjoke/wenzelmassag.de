@@ -21,20 +21,20 @@
 			/*
 				Render the layout field as a simple layout:
 
-				<section class=grid id=abc>
+				<div class=grid-row>
 					<div class=column style="--span: X">
 						[BLOCKS content]
 					</div>
-				</section>
+				</div>
 			*/
 			foreach ($page->layout()->toLayouts() as $layout): ?>
-			<section class="grid" id="<?= $layout->id() ?>">
+			<div class="grid-row">
 				<?php foreach ($layout->columns() as $column): ?>
 				<div class="column" style="--span:<?= $column->span() ?>">
 					<?= $column->blocks() ?>
 				</div>
 				<?php endforeach ?>
-			</section>
+			</div>
 			<?php endforeach ?>
 		</main>
 		<footer></footer>
