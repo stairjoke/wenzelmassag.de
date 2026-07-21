@@ -9,18 +9,16 @@
 				Display an image respecting light and dark mode, if the field `headlineType` is set to "image"
 			*/
 			if($page->headlineType() == "image"): ?>
-				<div class="grid-row">
-					<div class="column" style="--span:2">
-						<h1 style="--headline-max-width: <?= ($page->headlineMaxWidth()->isNotEmpty()) ? $page->headlineMaxWidth() : 100; ?>%">
-							<picture>
-							<?php $headlineImage = $page->headlineImage()->toFiles();
-							foreach($headlineImage as $image) : ?>
-								<source srcset="<?= $image->url() ?>" media="(prefers-color-scheme: <?= $image->colorscheme() ?>)" />
-							<?php endforeach; ?>
-								<img class="noShadow" srcset="<?= $headlineImage->first()->url() ?>" alt="<?= $headlineImage->first()->alt() ?>" fetchpriority="high" />
-							</picture>
-						</h1>
-					</div>
+				<div class="grid-row splash">
+					<h1 style="--headline-max-width: <?= ($page->headlineMaxWidth()->isNotEmpty()) ? $page->headlineMaxWidth() : 100; ?>%">
+						<picture>
+						<?php $headlineImage = $page->headlineImage()->toFiles();
+						foreach($headlineImage as $image) : ?>
+							<source srcset="<?= $image->url() ?>" media="(prefers-color-scheme: <?= $image->colorscheme() ?>)" />
+						<?php endforeach; ?>
+							<img class="noShadow" srcset="<?= $headlineImage->first()->url() ?>" alt="<?= $headlineImage->first()->alt() ?>" fetchpriority="high" />
+						</picture>
+					</h1>
 				</div>
 			<?php endif; // headline is image
 
