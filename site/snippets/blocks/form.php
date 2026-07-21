@@ -1,4 +1,9 @@
 <?php
+	/* To Do:
+		- Add error and success messages
+		- Add method for submitting/sending
+		*/
+
 	$formFields = $block->formFields()->split();
 	if(count($formFields) > 0){
 		$name = in_array('name', $formFields);
