@@ -23,7 +23,7 @@
 			<?php endif; // headline is image
 
 			/*
-				Render the layout field as a simple layout:
+				Render the layout field as a simple layout following this pattern:
 
 				<div class=grid-row>
 					<div class=column style="--span: X">
