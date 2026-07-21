@@ -36,9 +36,9 @@
 	</div>
 	<?php endif;
 	if($replyVia): ?>
-	<fieldset class="input">
+	<fieldset class="input switch">
 		<legend><?= t('form-block.prefer-reply-via', "Preference • Callback or email?") ?></legend>
-		<label><input name="replyVia" type="radio" value="none" /><?= t('no-preference', 'no preference') ?></label>
+		<label><input name="replyVia" type="radio" value="none" checked="" /><?= t('no-preference', 'no preference') ?></label>
 		<label><input name="replyVia" type="radio" value="phone" /><?= t('callback', 'call back') ?></label>
 		<label><input name="replyVia" type="radio" value="email" /><?= t('email', 'email') ?></label>
 	</fieldset>
@@ -63,6 +63,12 @@
 	<?php endif ?>
 
 	<input name="key" type="hidden" value="<?= hash('md5', $one + $two) ?>" />
+
+	<fieldset class="input">
+		<p><?= t('form-block.privacy-label', "Privacy consent") ?></p>
+		<label><input type="checkbox" value="privacy" required /> <?= $block->privacyNotice()->kt() ?></label>
+	</fieldset>
 	<input type="submit" value="<?= t('form-block.submit', 'send') ?>" />
-	<p>* <?= t('form-block.obligatory', "Obligatory field.") ?></p>
+
+	<p class="big">* <?= t('form-block.obligatory', "Obligatory field.") ?></p>
 </form>

@@ -20,6 +20,7 @@ return [
 		'form-block.message-placeholder' => "Wie mache ich Sie zum glücklichen Kunde?",
 		'form-block.obligatory' => "Erforderliche Angabe.",
 		'form-block.prefer-reply-via' => 'Präferenz • Rückruf oder E-Mail?',
+		'form-block.privacy-label' => 'Datenschutz-Einwilligung',
 		'form-block.spam-protection' => "SPAM-Schutz",
 		'form-block.spam-challenge' => "Bitte addieren Sie diese beiden Zahlen und tragen Sie das Ergebnis ein",
 		'form-block.spam-placeholder' => "Bitte addieren Sie {one} und {two}",
