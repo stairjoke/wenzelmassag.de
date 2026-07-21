@@ -51,12 +51,12 @@
 	</div>
 	<?php endif;
 	if($captcha): ?>
-	<div class="input">
-		<label for="captcha"><?= t('form-block.spam-protection', 'SPAM protection') ?></label>
-		<input id="captcha" name="captcha" type="text" />
+	<div class="input big">
+		<label for="captcha"><?= t('form-block.spam-protection', 'SPAM protection') ?> • <?= t('form-block.spam-challenge', "Please add these two numbers and enter the result") ?>: <?php $one = rand(1, 5); $two = rand(1, 5); echo($one . ", " . $two) ?></label>
+		<input id="captcha" name="captcha" type="number" />
 	</div>
 	<?php endif ?>
 
-	<input name="key" type="hidden" value="" />
+	<input name="key" type="hidden" value="<?= hash('md5', $one + $two) ?>" />
 	<input type="submit" value="<?= t('form-block.submit', 'send') ?>" />
 </form>

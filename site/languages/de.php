@@ -20,6 +20,7 @@ return [
 		'form-block.message-placeholder' => "Was sollte ich tun, damit Sie ein*e glückliche*r Kund*in werden?",
 		'form-block.prefer-reply-via' => 'Präferenz • Rückruf oder E-Mail?',
 		'form-block.spam-protection' => "SPAM-Schutz",
+		'form-block.spam-challenge' => "Bitte addieren Sie diese beiden Zahlen und tragen Sie das Ergebnis ein",
 		'form-block.submit' => "Absenden",
 		'image' => 'Bild',
 		'message' => 'Nachricht',
