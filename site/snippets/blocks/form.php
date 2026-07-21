@@ -21,13 +21,13 @@
 	if($email): ?>
 	<div class="input">
 		<label for="email"><?= t('email', 'Email') ?></label>
-		<input id="email" name="email" type="email" />
+		<input id="email" name="email" type="email" placeholder="<?= t('form-block.email-placeholder', "So I can reply to you.") ?>" />
 	</div>
 	<?php endif;
 	if($fon): ?>
 	<div class="input">
 		<label for="fon"><?= t('phone', 'Phone') ?></label>
-		<input id="fon" name="fon" type="tel" />
+		<input id="fon" name="fon" type="tel" placeholder="<?= t('form-block.fon-placeholder', "Old fashioned? Maybe.") ?>" />
 	</div>
 	<?php endif;
 	if($replyVia): ?>
@@ -41,7 +41,7 @@
 	if($message): ?>
 	<div class="input big">
 		<label for="message"><?= t('message', 'Message') ?></label>
-		<textarea id="message" name="message"></textarea>
+		<textarea id="message" name="message" placeholder="<?= t('form-block.message-placeholder', "What should I do to make you a happy customer?") ?>"></textarea>
 	</div>
 	<?php endif;
 	if($files): ?>
