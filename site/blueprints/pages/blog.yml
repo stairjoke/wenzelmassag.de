@@ -11,9 +11,10 @@ tabs:
     label:
       de: Artikel
       en: Articles
+    icon: list-numbers
     sections:
       pages:
-        type: pages
+        extends: sections/pages
         layout: table
         columns:
           pubDate:
@@ -23,15 +24,25 @@ tabs:
           tags: true
         search: true
         sortBy: status asc date desc
-        template: article
+        template:
+          - article
   settings:
     label:
       de: Einstellungen
       en: Settings
+    icon: settings
     sections:
       fields:
         fields:
-          categories: fields/categorySetup
+          feedTitle:
+            width: 1/2
+            type: text
+            default: "{{ site.title }} ({{ page.title }})"
+            placeholder: "{{ site.title }} ({{ page.title }})"
+            required: true
+          categories:
+            extends: fields/categorySetup
+            width: 1/2
       info:
         text:
           de: |
