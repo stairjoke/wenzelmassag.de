@@ -6,6 +6,9 @@ return [
 		]
 	],
 	'languages' => true,
+	'cache' => [
+		'pages' => true
+	],
 	'email' => [
 		'transport' => [
 			'type' => 'smtp',
