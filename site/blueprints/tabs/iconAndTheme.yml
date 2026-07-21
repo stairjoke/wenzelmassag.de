@@ -15,7 +15,7 @@ sections:
             Favikonen sind die kleinen Bildchen neben dem Namen eines Tabs. Sie erscheinen auch in den Lesezeichen/Favoriten und manche Suchmaschinen zeigen sie an.
           en: |
             Icons are the small images next to a tab’s name. They also appear in bookmarks and some search engines display them.
-      favicoDefault:
+      faviconDefault:
         width: 1/2
         type: files
         label:
@@ -26,7 +26,7 @@ sections:
           en: .ICO | It should be 64x64&nbsp;px in size, but also look good at 16x16&nbsp;px and 32x32&nbsp;px.
         max: 1
         uploads: icon-favicon
-      favicoSVG:
+      faviconSVG:
         width: 1/2
         type: files
         label:

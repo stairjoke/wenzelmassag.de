@@ -1,9 +1,9 @@
 <title><?= $page->title() ?> (<?= $site->title() ?>)</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php if($site->favicoDefault()->isNotEmpty()): ?>
+<?php if($site->faviconDefault()->isNotEmpty()): ?>
 <!-- User defined Favicon overriding /favicon.ico -->
-<link rel="icon" type="image/vnd.microsoft.icon" href="<?= $site->favicoDefault()->toFile()->url() ?>">
+<link rel="icon" type="image/vnd.microsoft.icon" href="<?= $site->faviconDefault()->toFile()->url() ?>">
 <?php endif; ?>
 
 <!-- Generic JS -->
