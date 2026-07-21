@@ -23,3 +23,5 @@
 	snippet("head.Feeds");
 	snippet("head.OpenGraph");
 ?>
+<meta name="generator" content="Kirby CMS (getkirby.com)" />
+<!-- This Website was built using the Custom Kirby Kit: https://codeberg.org/Entspannt-Digital/custom-kirby-kit and the Kirby CMS: https://getkirby.com -->
