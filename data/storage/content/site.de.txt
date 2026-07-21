@@ -6,40 +6,36 @@ Logotype: Custom Kirby Kit
 
 ----
 
-Ogcategories: 
+Ogcategories:
 
 ----
 
-Description: 
+Description:
 
 ----
 
-Ogimage: 
+Ogimage:
 
 ----
 
-Favicodefault: 
+Favicodefault:
 
 ----
 
-Themecolor: 
+Themecolor:
 
 ----
 
-Favicosvg: 
+Favicosvg:
 
 ----
 
-Faviconmaskicon: 
+Faviconmaskicon:
 
 ----
 
-Appicons: 
+Appicons:
 
 ----
 
-Currency: 
-
-----
-
-Links: 
+Links:

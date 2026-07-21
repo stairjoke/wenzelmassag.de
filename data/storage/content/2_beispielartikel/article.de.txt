@@ -1,0 +1,64 @@
+Title: Beispielartikel
+
+----
+
+Text: 
+
+----
+
+Author:
+
+- 
+  id: uuIfENhe
+  image:
+    back: black
+    color: gray-500
+    cover: false
+    icon: user
+    ratio: 1/1
+  info: ""
+  link: /account
+  permissions:
+    access: true
+    create: false
+    changeEmail: true
+    changeLanguage: true
+    changeName: true
+    changePassword: true
+    changeRole: false
+    delete: false
+    list: true
+    update: true
+  text: Wenzel Massag (@stairjoke)
+  uuid: user://uuIfENhe
+  email: mail@wenzelmassag.de
+  sortable: true
+  username: Wenzel Massag (@stairjoke)
+
+----
+
+Date: 
+
+----
+
+Teaser: 
+
+----
+
+Uuid: nszxyjw8z6cnhxos
+
+----
+
+Headlinetype: text
+
+----
+
+Headlineimage: 
+
+----
+
+Headlinemaxwidth: 100
+
+----
+
+Tags: 
