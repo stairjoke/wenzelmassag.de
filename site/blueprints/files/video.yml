@@ -7,6 +7,8 @@ options:
   changeTemplate: false
 
 extends: fields/uploads
+accept:
+  type: video
 fields:
   poster:
     width: 1/2

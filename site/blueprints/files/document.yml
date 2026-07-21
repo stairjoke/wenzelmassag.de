@@ -7,3 +7,5 @@ options:
   changeTemplate: false
 
 extends: fields/uploads
+accept:
+  type: document

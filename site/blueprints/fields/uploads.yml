@@ -15,7 +15,7 @@ fields:
     time: true
     default: now
   caption:
-    width: 1/2
+    width: 1/3
     type: textarea
     buttons: false
     label:
