@@ -1,39 +1,29 @@
 <?php
-
-/** @var \Kirby\Cms\Block $block */
-$alt     = $block->alt();
-$caption = $block->caption();
-$crop    = $block->crop()->isTrue();
-$link    = $block->link();
-$ratio   = $block->ratio()->or('auto');
-$src     = null;
-
-if ($block->location() == 'web') {
-		$src = $block->src()->esc();
-} elseif ($image = $block->image()->toFile()) {
-		$alt = $alt->or($image->alt());
-		$src = $image->url();
+	if ($image = $block->image()->toFile()) {
+		$alt           = $block->alt()->or($image->alt());
+		$caption       = $block->caption()->or($image->caption());
+		$ratio         = $block->ratio()->or('auto');
 		$dominantColor = $image->color();
-		$shadow = $image->shadow()->toBool();
-		$caption = $caption->or($image->caption());
-}
+		$shadow        = ($image->shadow()->isNotEmpty()) ? $image->shadow()->toBool() : true;
 
+		$crop          = $block->crop()->isTrue();
+	}
 ?>
-<?php if ($src): ?>
-	<div class="image-container" style="--dominant-color: <?= $dominantColor ?>" class="<?= e($shadow, null, 'noShadow') ?>">
-		<figure<?= Html::attr(['data-ratio' => $ratio, 'data-crop' => $crop], null, ' ') ?>>
-			<?php if ($link->isNotEmpty()): ?>
-			<a href="<?= Str::esc($link->toUrl()) ?>">
-				<img src="<?= $src ?>" alt="<?= $alt->esc() ?>">
-			</a>
-			<?php else: ?>
-			<img src="<?= $src ?>" alt="<?= $alt->esc() ?>">
-			<?php endif ?>
 
+
+<?php if ($image): ?>
+	<div class="image-container <?= e($shadow, 'shadow') ?>" style="--dominant-color: <?= $dominantColor ?>" class="<?= e($shadow, null, 'noShadow') ?>">
+		<figure<?= Html::attr(['data-ratio' => $ratio, 'data-crop' => $crop], null, ' ') ?>>
+			<?php $sizes = "(max-width: 38rem) calc(100vw - 2rem), calc(100vw - 6rem)"; ?>
+			<picture>
+				<source srcset="<?= $image->srcset('column-avif') ?>" sizes="<?= $sizes ?>" type="image/avif" />
+				<source srcset="<?= $image->srcset('scolumn-webp') ?>" sizes="<?= $sizes ?>" type="image/webp" />
+				<img alt="<?= $image->alt() ?>" src="<?= $image->resize(576)->url()?>" srcset="<?= $image->srcset('column') ?>" sizes="<?= $sizes ?>" width="576" height="<?= $image->resize(576)->height() ?>"/>
+			</picture>
 			<?php if ($caption->isNotEmpty()): ?>
-			<figcaption inert>
-				<p><?= $caption ?></p>
-			</figcaption>
+				<figcaption inert>
+					<p><?= $caption ?></p>
+				</figcaption>
 			<?php endif ?>
 		</figure>
 	</div>
