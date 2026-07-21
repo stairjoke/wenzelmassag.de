@@ -1,0 +1,32 @@
+name:
+  de: Responsive Karte
+  en: Responsive card
+icon: info-card
+preview: fields
+tabs:
+  card-ontent:
+    label:
+      de: Karteninhalt
+      en: Content of card
+    icon: layers
+    fields:
+      title:
+        type: text
+        icon: title
+        label:
+          de: Titel
+          en: Title
+      text:
+        width: 1/2
+        type: textarea
+        label: Text
+      image:
+        width: 1/2
+        label:
+          de: Bild
+          en: Image
+        type: files
+        max: 1
+        uploads: image
+        layout: cards
+        size: small

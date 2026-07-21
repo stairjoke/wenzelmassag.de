@@ -6,6 +6,40 @@ return [
 		]
 	],
 	'languages' => true,
+	'thumbs' => [
+		'srcsets' => [
+			'column' => [
+				/* 1/2 column @1x max 33rem */
+				'264w' => ['width' => 264],
+				/* 1/2 column @2x max 33rem, 1/1 column @1x max 36rem */
+				'576w' => ['width' => 576],
+				/* 1/1 column @2x max 36rem */
+				'1152w' => ['width' => 1152],
+				/* 1/1 column @3x max 36rem */
+				'1728w' => ['width' => 1728]
+			],
+			'column-avif' => [
+				/* 1/2 column @1x max 33rem */
+				'264w' => ['width' => 264, 'format' => 'avif'],
+				/* 1/2 column @2x max 33rem, 1/1 column @1x max 36rem */
+				'576w' => ['width' => 576, 'format' => 'avif'],
+				/* 1/1 column @2x max 36rem */
+				'1152w' => ['width' => 1152, 'format' => 'avif'],
+				/* 1/1 column @3x max 36rem */
+				'1728w' => ['width' => 1728, 'format' => 'avif']
+			],
+			'column-webp' => [
+				/* 1/2 column @1x max 33rem */
+				'264w' => ['width' => 264, 'format' => 'webp'],
+				/* 1/2 column @2x max 33rem, 1/1 column @1x max 36rem */
+				'576w' => ['width' => 576, 'format' => 'webp'],
+				/* 1/1 column @2x max 36rem */
+				'1152w' => ['width' => 1152, 'format' => 'webp'],
+				/* 1/1 column @3x max 36rem */
+				'1728w' => ['width' => 1728, 'format' => 'webp']
+			]
+		]
+	],
 	'blocks' => [
 		'fieldsets' => [
 			'text' => [
@@ -38,7 +72,7 @@ return [
 				'type' => 'group',
 				'open' => true,
 				'fieldsets' => [
-					'line', 'code'
+					'responsive-card', 'line', 'code'
 				]
 			]
 		]
