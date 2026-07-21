@@ -84,6 +84,34 @@ return [
 				]
 			]
 		]
+	],
+	'routes' => [
+		[
+			'pattern' => '(:all)/feed.xml',
+			'action' => function(string $slug){
+				$page = page($slug);
+				if($page) {
+					// Page exists
+					// - Check if page is a blog
+					// - if blog, serve feed
+					// - else, serve 404
+
+					if($page->intendedTemplate() == "blog"){
+						// Is a blog page, will serve an atom feed
+						$feed = new page([
+							'slug' => 'feed',
+							'parent' => $page,
+							'template' => 'atom'
+						]);
+
+						return $feed;
+					}
+				}else{
+					// Page does not exist, serve 404
+					return false;
+				}
+			}
+		]
 	]
 ];
 ?>
