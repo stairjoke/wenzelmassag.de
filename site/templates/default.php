@@ -11,7 +11,7 @@
 			if($page->headlineType() == "image"): ?>
 				<div class="grid-row">
 					<div class="column" style="--span:2">
-						<h1>
+						<h1 style="--headline-max-width: <?= ($page->headlineMaxWidth()->isNotEmpty()) ? $page->headlineMaxWidth() : 100; ?>%">
 							<picture>
 							<?php $headlineImage = $page->headlineImage()->toFiles();
 							foreach($headlineImage as $image) : ?>

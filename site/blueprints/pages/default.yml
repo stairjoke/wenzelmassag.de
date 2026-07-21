@@ -32,6 +32,8 @@ columns:
                   en: Image
                 icon: image
           headlineImage:
+            when:
+              headlineType: image
             label:
               de: Titel-Überschrift-Bild
               en: Title-Headline-Image
@@ -39,8 +41,18 @@ columns:
             max: 2
             layout: cards
             uploads: image
+          headlineMaxWidth:
             when:
               headlineType: image
+            label:
+              de: Titel-Überschrift-Bild max. Breite
+              en: Titel-Headline-Image max. width
+            type: range
+            min: 50
+            max: 100
+            default: 100
+            tooltip:
+              after: "%"
           layout:
             type: layout
             layouts:
