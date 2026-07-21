@@ -1,0 +1,6 @@
+type: pages
+layout: list
+template:
+  - default
+  - text
+  - blog

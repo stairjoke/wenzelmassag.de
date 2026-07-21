@@ -10,8 +10,7 @@ tabs:
     icon: page
     sections:
       pages:
-        type: pages
-        layout: list
+        extends: sections/pages
       fields:
         fields:
           externalLinksList: fields/externalLinksList
