@@ -2,44 +2,8 @@ Title: Custom Kirby Kit
 
 ----
 
-Externallinkslist: 
-
-----
-
-Ogimage: 
-
-----
-
 Description: Example description.
 
 ----
 
-Favicodefault: 
-
-----
-
-Favicosvg: 
-
-----
-
-Faviconmaskicon: 
-
-----
-
-Themecolor: 
-
-----
-
-Appicons: 
-
-----
-
 Logotype: Custom Kirby Kit
-
-----
-
-Ogcategories: 
-
-----
-
-Links: 
