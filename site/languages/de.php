@@ -17,16 +17,18 @@ return [
 		'form-block.fon-placeholder' => "Altmodisch? Mag sein.",
 		'form-block.file-attachment' => "Dateianhang",
 		'form-block.name-placeholder' => "Wie darf ich Sie grüßen?",
-		'form-block.message-placeholder' => "Was sollte ich tun, damit Sie ein*e glückliche*r Kund*in werden?",
+		'form-block.message-placeholder' => "Wie mache ich Sie zum glücklichen Kunde?",
+		'form-block.obligatory' => "Erforderliche Angabe.",
 		'form-block.prefer-reply-via' => 'Präferenz • Rückruf oder E-Mail?',
 		'form-block.spam-protection' => "SPAM-Schutz",
 		'form-block.spam-challenge' => "Bitte addieren Sie diese beiden Zahlen und tragen Sie das Ergebnis ein",
+		'form-block.spam-placeholder' => "Bitte addieren Sie {one} und {two}",
 		'form-block.submit' => "Absenden",
 		'image' => 'Bild',
 		'message' => 'Nachricht',
 		'name' => 'Name',
 		'no-preference' => 'Keine Präferenz',
-		'phone' => 'Telefon',
+		'phone' => 'Telefon'
 	],
 	'url' => '/'
 ];
