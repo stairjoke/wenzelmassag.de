@@ -5,18 +5,18 @@ Redirect /proximity /public/downloads/Proximity-by-Wenzel-Massag_mail-AT-wenzelm
 Redirect /portfolio-de /public/downloads/Portfolio-DE-2026_4.pdf
 Redirect /portfolio-en /public/downloads/Portfolio-EN-2026_4.pdf
 
-# Enabling native language support in Apache, no CMS required!
+# Use Apache multi language features
 Options +MultiViews
 LanguagePriority en de
 ForceLanguagePriority Fallback
 
-# DETECT preferred user language
-# If "?lang=xx" is in the URL, set "pref_lang"-cookie
-# Bake a cookie: name=pref_lang, value=%1 (the lang code), domain=current, expire= 400 days in minutes, Path=/
-RewriteCond %{QUERY_STRING} (?:^|&)lang=(en|de)(?:&|$) [NC]
-RewriteRule ^(.*)$ $1 [CO=pref_lang:%1:.:576000:/,QSD,R=302,L]
+# DETECT user chose language if available and save as cookie
+RewriteCond %{QUERY_STRING} (?:^|&)lang=auto(?:&|$) [NC]
+RewriteRule ^(.*)$ $1 [CO=pref_lang:deleted:wenzelmassag.de:-1:/,QSD,R=302,L]
 
-# USE preferred language
-# If the "pref_lang" cookie exists, tell Apache to overwrite the browser's language request.
-RewriteCond %{HTTP_COOKIE} pref_lang=(en|de) [NC]
-RewriteRule ^ - [E=HTTP_ACCEPT_LANGUAGE:%1]
+RewriteCond %{QUERY_STRING} (?:^|&)lang=(en|de)(?:&|$) [NC]
+RewriteRule ^(.*)$ $1 [CO=pref_lang:%1:wenzelmassag.de:576000:/,QSD,R=302,L]
+
+# USE user selected language
+SetEnvIf Cookie "pref_lang=en" prefer-language=en
+SetEnvIf Cookie "pref_lang=de" prefer-language=de

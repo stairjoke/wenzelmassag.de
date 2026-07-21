@@ -74,6 +74,6 @@
 	</body>
 	<!-- Language Switcher UI Links -->
 	<div class="language-switcher">
-			<a href="?lang=en">EN</a> | <a href="?lang=de">DE</a>
+			<a href="?lang=auto">🌐</a> | <a href="?lang=en">English</a> | <a href="?lang=de">Deutsch</a>
 	</div>
 </html>
