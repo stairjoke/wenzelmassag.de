@@ -36,18 +36,6 @@ tabs:
           openGraphFields:
             type: fields
             fields:
-              OGCategories:
-                width: 1/2
-                label:
-                  de: Verfügbare Kategorien für Artikel
-                  en: Available categories for articles
-                help:
-                  de: |
-                    Hier können Kategorien festgelegt werden, die beim Erstellen und Bearbeiten von Artikeln ausgewählt werden können.
-                  en: |
-                    Here you can define categories you’d like to be available when creating or editing articles.
-                type: tags
-                icon: list-bullet
               description:
                 width: 1/2
                 label:
@@ -63,6 +51,7 @@ tabs:
                 size: small
                 counter: true
               ogImage:
+                width: 1/2
                 label:
                   de: Standard Vorschaubild
                   en: Default preview image

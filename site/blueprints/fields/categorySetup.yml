@@ -1,0 +1,10 @@
+label:
+  de: Kategorien
+  en: Categories
+help:
+  de: |
+    Hier angelegt Kategorien stehen in Artikel zur Auswahl und dienen der Strukturierung des Blogs.
+  en: |
+    Categories set up here are available for selection in articles and help to structure the blog.
+type: tags
+icon: list-bullet
