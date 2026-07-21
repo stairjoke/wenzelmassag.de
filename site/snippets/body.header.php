@@ -2,7 +2,7 @@
 	<nav>
 		<ol>
 			<li>
-				<a class="logotype" href="<?= $site->url() ?>" <?php e($page->isHomePage(), 'aria-current=page') ?>><span>Entspannt.Digital</span> <span>Digital Design Studio</span></a>
+				<a class="logotype" href="<?= $site->url() ?>" <?php e($page->isHomePage(), 'aria-current=page') ?>><span>Entspannt.Digital&nbsp;</span><span>&mdash;&nbsp;Digital Design Studio</span></a>
 			</li>
 			<?php if($site->children()->count() > 0) : ?>
 				<li id="menu-anchor">
