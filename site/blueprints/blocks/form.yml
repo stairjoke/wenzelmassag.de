@@ -37,6 +37,15 @@ tabs:
           captcha:
             de: SPAM-Schutz
             en: SPAM-protection
+      privacyNotice:
+        type: textarea
+        size: tiny
+        label:
+          de: Datenschutzhinweis
+          en: Privacy info
+        help:
+          de: Denken Sie daran die Datenschutzerklärung zu verlinken!
+          en: Remember to link to the privacy policy!
       successMessage:
         type: textarea
         label:
