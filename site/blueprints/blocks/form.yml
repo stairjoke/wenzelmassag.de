@@ -10,12 +10,13 @@ tabs:
       en: Form config
     icon: chat
     fields:
-      form-fields:
+      formFields:
         type: multiselect
         label:
           de: Formuarfelder
           en: Form fields
         layout: list
+        min: 1
         options:
           name: Name
           email:
@@ -36,3 +37,25 @@ tabs:
           captcha:
             de: SPAM-Schutz
             en: SPAM-protection
+      successMessage:
+        type: textarea
+        label:
+          de: Erfolgsmeldung
+          en: Success message
+        help:
+          de: |
+            Diese Nachricht wird nach einem erfolgreichen Versand angezeigt.
+          en: |
+            This message will be displayed when a message was sent successfully.
+        counter: true
+      errorMessage:
+        type: textarea
+        label:
+          de: Fehlermeldung
+          en: Error message
+        help:
+          de: |
+            Diese Nachricht wird nach einem fehlgeschlagenen Versand angezeigt.
+          en: |
+            This message will be displayed when a message fails to send.
+        counter: true

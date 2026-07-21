@@ -16,9 +16,12 @@ return [
 		'email' => 'E-Mail',
 		'phone' => 'Telefon',
 		'preferrReplyVia' => 'Präferenz • Rückruf oder E-Mail?',
+		'noPreference' => 'Keine Präferenz',
+		'callback' => 'Rückruf',
 		'message' => 'Nachricht',
 		'fileAttachment' => 'Dateianhang',
-		'spamProtection' => 'SPAM-Schutz'
+		'spamProtection' => 'SPAM-Schutz',
+		'submitForm' => 'Absenden'
 	],
 	'url' => '/'
 ];
