@@ -6,6 +6,7 @@
 You might find leftovers from this repository’s time as entspannt.digital. If you do, please file an issue or clean them up and send a pull request. Thank you!
 
 ## Quick facts
+- This repository uses [git lfs.](https://git-lfs.com) Before cloning, you must install it on your workstation!
 - This repository uses [conventional commits.](https://www.conventionalcommits.org/en/v1.0.0/) If you plan to submit a pull request, please write your commit messages accordingly.
 - To use this kit, I recommend you fork or clone this repository, depending on whether you wish to be able to pull in changes I make in the future. You also need to familiarise yourself with the [Kirby CMS composer kit.](https://github.com/getkirby/composerkit/)
 
