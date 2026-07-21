@@ -29,7 +29,7 @@ tabs:
     label:
       de: Open Graph Einstellungen
       en: Open Graph Settings
-    icon: sitemap
+    icon: open
     columns:
       column:
         sections:
@@ -174,15 +174,6 @@ tabs:
           moreFields:
             type: fields
             fields:
-              currency:
-                label:
-                  de: Währung
-                  en: Currency
-                type: select
-                default: EUR
-                options:
-                  - EUR
-                  - CHF
               links:
                 label: Links
                 type: structure

@@ -52,12 +52,6 @@
 		<meta property="product:plural_title" content="<?= $page->pluralTitle() ?>">
 	<?php endif;
 
-	//OG Product > Price & Currency
-	if($page->price()->isNotEmpty() && $site->currency()->isNotEmpty()): ?>
-		<meta property="product:price.amount" content="<?= $page->price() ?>">
-		<meta property="product:price.currency" content="<?= $site->currency() ?>">
-	<?php endif;
-
 	//OG Profile
 	if($OGKind == "profile"):
 		// > First name
