@@ -21,7 +21,7 @@
 	<?php endif;
 
 	//OG Description
-	if($page->teaser()->isNotEmpty() || $site->description()->isNotEmpty()): ?>
+	if($page->description()->isNotEmpty() || $site->description()->isNotEmpty()): ?>
 		<meta property="og:description" content="<?= $page->teaser()->unhtml() ?>">
 	<?php endif;
 
@@ -41,9 +41,12 @@
 		<?php endif;
 
 		//OG Article > Tags
-		foreach($page->tags()->split() as $tag): ?>
-			<meta property="article:tag" content="<?= $tag ?>">
+		if($page->tags()->isNotEmpty()):
+			foreach($page->tags()->split() as $tag): ?>
+				<meta property="article:tag" content="<?= $tag ?>">
 		<?php endforeach;
+		endif; //
+
 	endif; //is article
 
 
