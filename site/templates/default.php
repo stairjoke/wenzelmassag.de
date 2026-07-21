@@ -23,7 +23,6 @@
 			*/
 			if($page->headlineType() == "image"): ?>
 				<div class="grid-row">
-					<div class="column" style="--span:1"> </div>
 					<div class="column" style="--span:2">
 						<h1>
 							<picture>
@@ -35,7 +34,6 @@
 							</picture>
 						</h1>
 					</div>
-					<div class="column" style="--span:1"></div>
 				</div>
 			<?php endif; // headline is image
 
@@ -51,7 +49,7 @@
 			foreach ($page->layout()->toLayouts() as $layout): ?>
 			<div class="grid-row">
 				<?php foreach ($layout->columns() as $column): ?>
-				<div class="column" style="--span:<?= $column->span(4) ?>">
+				<div class="column" style="--span:<?= $column->span(2) ?>">
 					<?= $column->blocks() ?>
 				</div>
 				<?php endforeach ?>
